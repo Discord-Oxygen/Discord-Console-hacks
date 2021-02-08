@@ -42,6 +42,7 @@ https://github.com/samogot/betterdiscord-plugins (The original Creator of this s
 This script enables all Badges on you client. Note that other users won't see them
 all credit to rezizt and zebratic
 ![preview](https://user-images.githubusercontent.com/55095883/107262574-00933d00-6a41-11eb-86da-e1ba7a413982.png)
+This isn't a fake screenshot your client will really display this
 ```js
 Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 [['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
@@ -51,5 +52,5 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 ## Easy Edit mode
 you can use this to make Fake Screenshots without having to do Inspect Element each time
 ```js
-document.designMode = 'on'```
-
+document.designMode = 'on'
+```
