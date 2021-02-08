@@ -46,7 +46,7 @@ This isn't a fake screenshot your client will really display this
 ```js
 Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 [['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
-0).exports.default.getCurrentUser().flags=-7
+0).exports.default.getCurrentUser().flags=-5
 ```
 
 ## Easy Edit mode
