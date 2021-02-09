@@ -58,15 +58,16 @@ you can use this to make Fake Screenshots without having to do Inspect Element e
 document.designMode = 'on'
 ```
 ## Discord Nitro
-doesn't work and you won't find a working one. Just buy that subscription and support the Discord Devs.
+Just buy that subscription and support the Discord Devs. This is just a experiment that probably doesn't even work.
+Credit to https://github.com/An00nymushun/DiscordFreeEmojis for the Emoji hadnling part
 ```js
 Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 [['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
 0).exports.default.getCurrentUser().premium_type=2
-setInterval(() => {
-document.getElementsByClassName('emojiItemDisabled-1FvFuF')[0].classList.remove('emojiItemDisabled-1FvFuF')
-}, 50);
+var headelement = document.getElementsByTagName('head')[0].innerHTML;
+headelement.appendChild(document.createTextNode('<style>.emojiItemDisabled-1FvFuF{filter: grayscale(0%);}</style>'));
 ```
+
 ## oauth Bot and System
 test. Doesn't work. Don't run this
 ```js
