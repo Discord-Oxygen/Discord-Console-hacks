@@ -63,6 +63,9 @@ doesn't work and you won't find a working one. Just buy that subscription and su
 Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 [['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
 0).exports.default.getCurrentUser().premium_type=2
+setInterval(() => {
+document.getElementsByClassName('emojiItemDisabled-1FvFuF')[0].classList.remove('emojiItemDisabled-1FvFuF')
+}, 50);
 ```
 ## oauth Bot and System
 test. Doesn't work. Don't run this
