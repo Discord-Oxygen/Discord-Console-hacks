@@ -17,7 +17,7 @@ NTzQvPcLBacBmgajXQc7QAaU.XCgboz.c4t51kFWSEmdmaPnKoyUuu8E78E
 paste this into the Console (while being logged in)
 ```js
 window.location.reload();
-copy(document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token);
+copy(document.body.appendChild(document.createElement `iframe`).contentWindow.window.localStorage.token);
 ```
 and the token should be in your Clipboard.
 If it's "null" do the same thing again. It usually should work always at the 2nd time
