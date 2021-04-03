@@ -13,14 +13,23 @@
 </table>
 NTzQvPcLBacBmgajXQc7QAaU.XCgboz.c4t51kFWSEmdmaPnKoyUuu8E78E
 
+## How to use these Hacks
+It only works on Dekstop Versions (Windows, Linux, MacOS), not on Mobile
+1. Press CTRL + SHIFT + I to toggle Developer Tools (Discord is electronjs wich is basically google chrome)
+2. Click on "Console" if not already selected
+3. Paste the script in
+4. Press enter
+
+
 ## Obtaining your Token
 paste this into the Console (while being logged in)
+and before the loading animation has finished, paste it again.
 ```js
 window.location.reload();
 copy(document.body.appendChild(document.createElement `iframe`).contentWindow.window.localStorage.token);
 ```
-and the token should be in your Clipboard.
-If it's "null" do the same thing again. It usually should work always at the 2nd time
+The token should be in your Clipboard.
+If it's just "null" or "undefined" do the same thing again. Don't wait to lomg inbetween the two times
 
 ## Logging in using Token
 paste this into the Console (CTRL + SHIFT + I) on the login screen (you need to be logged out)
@@ -60,14 +69,18 @@ you can use this to make Fake Screenshots without having to do Inspect Element e
 ```js
 document.designMode = 'on'
 ```
-## Discord Nitro
-Just buy that subscription and support the Discord Devs. This is just a experiment that probably doesn't even work.
-Credit to https://github.com/An00nymushun/DiscordFreeEmojis for the Emoji hadnling part
+## Free Discord Nitro (hack)
+Tricks your client into thinking you have Nitro. Converts the API request into non-nitro requests, so Discord won't notice that yoou don't have Nitro.
+Be extra careful with scripts that claim to do this, this script is the only working one. If you find a copy of this script, not directly provided by me or this repo, pls report it to me, its probably a scam.<br>
+Credit to https://github.com/An00nymushun/DiscordFreeEmojis for the Emoji handling part.<br>
+Note that not every feature is supported as, some things that run Server Side can't be simulated.
+But basic features (like animated emojis) should work.
 ```js
 /*
 I removed the code bc this shouldn't go public. Ppl would just copy and paste this anywhere and bad ppl would backdoor it.
 Also I don't want Discord to fix this.
-Its a WIP, DM me if you want to know more
+Its a WIP, DM me if you want to know more.
+If you are a developer and want to contribute, also DM me.
 */
 ```
 
