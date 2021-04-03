@@ -40,7 +40,7 @@ https://github.com/samogot/betterdiscord-plugins (The original Creator of this s
 ```
 ## Get all Badges
 This script enables all Badges on you client. Note that other users won't see them.<br>
-all credit to rezizt and zebratic<br>
+I found this randomly on the internet and modified it a bit, but I think https://github.com/X-x-X-0/discord-js is the original author<br>
 ![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)<br>
 <sup>This isn't a fake screenshot your client will really display this.</sup>
 ```js
