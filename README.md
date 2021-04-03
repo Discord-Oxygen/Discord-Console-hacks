@@ -61,11 +61,10 @@ document.designMode = 'on'
 Just buy that subscription and support the Discord Devs. This is just a experiment that probably doesn't even work.
 Credit to https://github.com/An00nymushun/DiscordFreeEmojis for the Emoji hadnling part
 ```js
-//Removed the code
-alert('Contact hxr404');
 /*
-I removed the code bc it didn't work. This was just an Idea how it could work.
-DM if you want to know more
+I removed the code bc this shouldn't go public. Ppl would just copy and paste this anywhere and bad ppl would backdoor it.
+Also I don't want Discord to fix this.
+Its a WIP, DM me if you want to know more
 */
 ```
 
