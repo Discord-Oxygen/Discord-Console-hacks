@@ -19,6 +19,9 @@ Note: I'm not affilated with Discord in any way. Use everything here at your own
 NTzQvPcLBacBmgajXQc7QAaU.XCgboz.c4t51kFWSEmdmaPnKoyUuu8E78E
 </details>
 
+<br>
+<br>
+
 ## Console Hacks
 
 ### How to use these Hacks
@@ -131,7 +134,7 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 ```
 <details>
 
-## Get hidden Channel ID's
+### Get hidden Channel ID's
 <details>
   <summary>Displays the ID's of channel that you can't see without hacks.</summar>
 
