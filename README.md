@@ -178,4 +178,7 @@ Object.values(webpackJsonp.push([
 ]).cache).find(m => m.exports && m.exports.default && m.exports.default.getPrivateChannelIds !== void 0).exports.default.getPrivateChannelIds()
 ```
 </details>
+
+![grafik](https://user-images.githubusercontent.com/55095883/116670257-cda57900-a99f-11eb-8f96-7d8d54754535.png)<br>
+<sup>Example Output of this command</sup><bbr>
 <br>
