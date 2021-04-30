@@ -47,8 +47,6 @@ If it's just "null" or "undefined" do the same thing again. Don't wait to lomg i
 <br>
 
 ## Logging in using Token
-![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)
-<sup>Login Screen after running the hack</sup>
 <details>
 <summary>Modifies the Login screen so you can use Tokens to log in.</summary>
 
@@ -59,6 +57,9 @@ function login(e){setInterval(()=>{document.body.appendChild(document.createElem
 and log in<br>
 Note that this doesn't work with Bot tokens, Bot tokens are different than user tokens, and Discord doesn't support this.<br>
 </details>
+
+![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)
+<sup>Login Screen after running the hack</sup>
 <br>
 
 ## Enable Staff Mode
@@ -79,8 +80,6 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},[['']]]).cach
 
 
 ## Get all Badges
-![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)<br>
-<sup>This isn't a fake screenshot your client will really display this.</sup>
 <details>
   <summary>This script enables all Badges on you client.</summary>
 
@@ -95,6 +94,9 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 0).exports.default.getCurrentUser().public_flags=-1
 ```
 </details>
+
+![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)
+<sup>This isn't a fake screenshot your client will really display this.</sup>
 <br>
 
 
