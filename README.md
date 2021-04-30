@@ -33,7 +33,7 @@ It only works on Dekstop Versions (Windows, Linux, MacOS), not on Mobile
 
 ## Obtaining your Token
 <details>
-<summary>Copied your Token into the Clipboard.</summary>
+<summary>Copies your Token into the Clipboard.</summary>
 
 paste this into the Console (while being logged in)
 and before the loading animation has finished, paste it again.
@@ -44,6 +44,7 @@ copy(document.body.appendChild(document.createElement `iframe`).contentWindow.wi
 The token should be in your Clipboard.
 If it's just "null" or "undefined" do the same thing again. Don't wait to lomg inbetween the two times
 </details>
+<br>
 
 ## Logging in using Token
 ![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)
@@ -58,6 +59,7 @@ function login(e){setInterval(()=>{document.body.appendChild(document.createElem
 and log in<br>
 Note that this doesn't work with Bot tokens, Bot tokens are different than user tokens, and Discord doesn't support this.<br>
 </details>
+<br>
 
 ## Enable Staff Mode
 <details>
@@ -73,6 +75,8 @@ https://github.com/samogot/betterdiscord-plugins (The original Creator)
 Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void 0).exports.default.getCurrentUser().flags+=1
 ```
 </details>
+<br>
+
 
 ## Get all Badges
 ![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)<br>
@@ -91,12 +95,18 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 0).exports.default.getCurrentUser().public_flags=-1
 ```
 </details>
+<br>
+
 
 ## Easy Edit mode
-you can use this to make Fake Screenshots without having to do Inspect Element each time
+<details>
+<summary>you can use this to make Fake Screenshots without having to do Inspect Element each time</summary>
+
 ```js
 document.designMode = 'on'
 ```
+</details>
+<br>
 
 ## Free Discord Nitro (hack)
 <details>
@@ -116,6 +126,7 @@ If you are a developer and want to contribute, also DM me.
 */
 ```
 </details>
+<br>
 
 ## oauth Bot and System
 <details>
@@ -132,6 +143,7 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 0).exports.default.getCurrentUser().system=true
 ```
 <details>
+<br>
 
 ## Get hidden Channel ID's
 <details>
@@ -151,3 +163,4 @@ Object.values(webpackJsonp.push([
 ]).cache).find(m => m.exports && m.exports.default && m.exports.default.getPrivateChannelIds !== void 0).exports.default.getPrivateChannelIds()
 ```
 </details>
+<br>
