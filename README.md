@@ -151,6 +151,9 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 0).exports.default.getCurrentUser().system=true
 ```
 <details>
+
+![grafik](https://user-images.githubusercontent.com/55095883/116669184-908cb700-a99e-11eb-9a7f-62c0d19e5486.png)
+<sup>Using the System Badge to make funny fake announcements</sup>
 <br>
 
 ## Get hidden Channel ID's
