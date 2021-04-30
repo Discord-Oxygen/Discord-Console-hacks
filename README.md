@@ -58,9 +58,9 @@ and log in<br>
 Note that this doesn't work with Bot tokens, Bot tokens are different than user tokens, and Discord doesn't support this.<br>
 </details>
 
-![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)
+![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)<br>
 <sup>Login Screen after running the hack</sup>
-<br>
+<br><br>
 
 ## Enable Staff Mode
 <details>
@@ -95,9 +95,9 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 ```
 </details>
 
-![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)
+![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)<br>
 <sup>This isn't a fake screenshot your client will really display this.</sup>
-<br>
+<br><br>
 
 
 ## Easy Edit mode
