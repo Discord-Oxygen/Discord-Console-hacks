@@ -154,11 +154,15 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 
 ![grafik](https://user-images.githubusercontent.com/55095883/116669184-908cb700-a99e-11eb-9a7f-62c0d19e5486.png)<br>
 <sup>Using the System Badge to make funny fake announcements</sup><br>
+![grafik](https://user-images.githubusercontent.com/55095883/116669793-47893280-a99f-11eb-972d-bcc8e07c65dd.png)<br>
+<sup>Fake Bot badge</sup><br>
+![grafik](https://user-images.githubusercontent.com/55095883/116669897-6982b500-a99f-11eb-8dfc-53caa1d312e3.png)<br>
+<sup>User Pop-Out with Bot badge</sup><br>
 <br>
 
 ## Get hidden Channel ID's
 <details>
-  <summary>Displays the ID's of channel that you can't see without hacks.</summar>
+  <summary>Displays the ID's of channel that you can't see without hacks.</summary>
 
 All credit to [https://github.com/X-x-X-0/discord-js](https://github.com/X-x-X-0/discord-js)
 ```js
