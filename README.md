@@ -17,8 +17,17 @@ Note: I'm not affilated with Discord in any way. Use everything here at your own
 </table>
 NTzQvPcLBacBmgajXQc7QAaU.XCgboz.c4t51kFWSEmdmaPnKoyUuu8E78E
 </details>
-
 <br>
+
+## Discords Internal Server Structure
+<details>
+Check out this Article about Reverse Engineering Discord, and the proof that Discord acts as a MITM (Intercepts your traffic and decrypts your messsages): <a href="https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626">https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626</a><br>
+That means, Discord Staff can read all of your messages... (still better than Telegram, where anyone can read your messages xD)<br>
+If you need privacy, use Signal or Threema or Briar. (or all of them :)
+
+![grafik](https://user-images.githubusercontent.com/55095883/116671170-e9f5e580-a9a0-11eb-98f9-3bcd65b9fdbf.png)<br>
+<sup>How sending Audioo/Video Messages in Discord Works.</sup>
+</details>
 <br>
 
 # Console Hacks
