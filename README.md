@@ -1,10 +1,9 @@
-# Discord-Console-hacks
-
 Note: I'm not affilated with Discord in any way. Use everything here at your own risk.
 
-## Inner workings of Discord
 
-### Discord Token Synatx
+# Inner workings of Discord
+
+## Discord Token Synatx
 <details>
 <table>
   <tr><th></th><th>Example</th></tr>
@@ -22,9 +21,9 @@ NTzQvPcLBacBmgajXQc7QAaU.XCgboz.c4t51kFWSEmdmaPnKoyUuu8E78E
 <br>
 <br>
 
-## Console Hacks
+# Console Hacks
 
-### How to use these Hacks
+## How to use these Hacks
 It only works on Dekstop Versions (Windows, Linux, MacOS), not on Mobile
 1. Press CTRL + SHIFT + I to toggle Developer Tools (Discord is electronjs wich is basically google chrome)
 2. Click on "Console" if not already selected
@@ -32,7 +31,7 @@ It only works on Dekstop Versions (Windows, Linux, MacOS), not on Mobile
 4. Press enter
 
 
-### Obtaining your Token
+## Obtaining your Token
 <details>
 <summary>Copied your Token into the Clipboard.</summary>
 
@@ -46,7 +45,7 @@ The token should be in your Clipboard.
 If it's just "null" or "undefined" do the same thing again. Don't wait to lomg inbetween the two times
 </details>
 
-### Logging in using Token
+## Logging in using Token
 ![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)
 <sup>Login Screen after running the hack</sup>
 <details>
@@ -60,7 +59,7 @@ and log in<br>
 Note that this doesn't work with Bot tokens, Bot tokens are different than user tokens, and Discord doesn't support this.<br>
 </details>
 
-### Enable Staff Mode
+## Enable Staff Mode
 <details>
 <summary>Enables some hidden features and sets your client to staff mode</summary>
  
@@ -75,7 +74,7 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},[['']]]).cach
 ```
 </details>
 
-### Get all Badges
+## Get all Badges
 ![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)<br>
 <sup>This isn't a fake screenshot your client will really display this.</sup>
 <details>
@@ -93,13 +92,13 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 ```
 </details>
 
-### Easy Edit mode
+## Easy Edit mode
 you can use this to make Fake Screenshots without having to do Inspect Element each time
 ```js
 document.designMode = 'on'
 ```
 
-### Free Discord Nitro (hack)
+## Free Discord Nitro (hack)
 <details>
   <summary>Get some Nitro features without buying Nitro</summary>
  
@@ -118,7 +117,7 @@ If you are a developer and want to contribute, also DM me.
 ```
 </details>
 
-### oauth Bot and System
+## oauth Bot and System
 <details>
   <summary>test. Doesn't work. Don't run this</summary>
 
@@ -134,7 +133,7 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 ```
 <details>
 
-### Get hidden Channel ID's
+## Get hidden Channel ID's
 <details>
   <summary>Displays the ID's of channel that you can't see without hacks.</summar>
 
