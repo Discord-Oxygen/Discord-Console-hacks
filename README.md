@@ -76,6 +76,9 @@ https://github.com/samogot/betterdiscord-plugins (The original Creator)
 Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void 0).exports.default.getCurrentUser().flags+=1
 ```
 </details>
+
+![discorddevoptions](https://user-images.githubusercontent.com/55095883/116668009-29223780-a99d-11eb-9387-625f10c64196.png)
+<sup>Developer Options Setting</sup>
 <br>
 
 
@@ -128,6 +131,9 @@ If you are a developer and want to contribute, also DM me.
 */
 ```
 </details>
+
+![grafik](https://user-images.githubusercontent.com/55095883/116668188-5d95f380-a99d-11eb-96cf-a0e2dfc6bb23.png)
+<sup>The Subscription Overview. The Account used for the Screenshot **didn't** buy Nitro</sup>
 <br>
 
 ## oauth Bot and System
