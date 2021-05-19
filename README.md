@@ -191,3 +191,16 @@ Object.values(webpackJsonp.push([
 ![grafik](https://user-images.githubusercontent.com/55095883/116670257-cda57900-a99f-11eb-8f96-7d8d54754535.png)<br>
 <sup>Example Output of this command</sup><bbr>
 <br>
+  
+## Changing Password
+<details>
+  <summary>Change the Password of the Account, thats currently logged in.</summary>
+
+  ```js
+  await fetch("https://discord.com/api/v9/users/@me", {
+    "credentials": "include",
+    "body": "{\"password\":\"123\",\"new_password\":\"hackedbyhxr404\"}",
+    "method": "PATCH",
+});
+```
+</details>
