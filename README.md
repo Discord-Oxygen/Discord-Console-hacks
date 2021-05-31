@@ -1,5 +1,12 @@
 Note: I'm not affilated with Discord in any way. Use everything here at your own risk.
 
+# Community
+My main Server (hxr404) is **not** for anything related to these hacks. For anything violating the ToS (including talking about these hacks) you will get banned there.<br>
+Join my alt Server instead: https://discord.gg/T7T3svK3rf (1st invite)<br>
+Marcell D'Avis with the crown Icon is my official alt account. Anyone who does not have the crown Icon on the Server mentioned above is **not** me.
+Please do not use console hacks of people impersonating me, you'll get scammed.<br>
+I'll update this invite regularly, if my account gets compromised or Discord shuts down the Server, I will create a new "Marcell D'Avis",<br>a new Server and will then update the invite above.<br>
+<sup>You can join my official Community Server (Invite in Expire-Bot Readme), wich is also the community for my YouTube channel and other ledgit things. Most people on that Server are joined because of these things and **not** because of "hacks", so please don't ask them about hacks.</sup>
 
 # Inner workings of Discord
 
