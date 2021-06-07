@@ -1,4 +1,4 @@
-Note: I'm not affilated with Discord in any way. Use everything here at your own risk.
+Note: I'm not affilated with Discord in any way. Use everything here at your own risk. This is meant for educational purposes only and using these codeblocks may result in your account being disabled/terminated.
 
 # Community
 My main Server (hxr404) is **not** for anything related to these hacks. For anything violating the ToS (including talking about these hacks) you will get banned there.<br>
@@ -208,5 +208,14 @@ Object.values(webpackJsonp.push([
     "body": "{\"password\":\"oldpassword\",\"new_password\":\"hackedbyhxr404\"}",
     "method": "PATCH",
 });
+```
+</details>
+  
+  ## Add guild features.
+<details>
+  <summary>Enable server features... Replace 'FEATURE' with something like 'PARTNERED' or 'VERIFIED'</summary>
+
+```js
+Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}},[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getGuilds!==void 0).exports.default.getGuild('SERVERID').features.add('FEATURE')
 ```
 </details>
