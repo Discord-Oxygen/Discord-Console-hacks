@@ -213,7 +213,8 @@ Object.values(webpackJsonp.push([
   
   ## Add guild features
 <details>
-  <summary>Enable server features... Replace 'FEATURE' with something like 'PARTNERED' or 'VERIFIED'<br>![image](https://user-images.githubusercontent.com/55095883/121220669-1c8adc00-c885-11eb-8033-5deeae919934.png)
+  <summary>Enable server features... Replace 'FEATURE' with something like 'PARTNERED' or 'VERIFIED'<br><img src="https://user-images.githubusercontent.com/55095883/121220849-4a702080-c885-11eb-965c-317749da0196.png"></img>
+
 <img src="https://user-images.githubusercontent.com/55095883/121219947-7b9c2100-c884-11eb-99f1-e0a8525512a9.png"></img><img src="https://user-images.githubusercontent.com/55095883/121220469-e9484d00-c884-11eb-816f-2d3b9f46a585.png"></img>)
 </summary>
 
