@@ -1,4 +1,4 @@
-Note: I'm not affilated with Discord in any way. Use everything here at your own risk. This is meant for educational purposes only and using these codeblocks may result in your account being disabled/terminated.
+Note: I'm not affilated with Discord and do not encourage using any of these hacks. Use everything here at your own risk. This is meant for educational purposes only and using these codeblocks may result in your account being disabled/terminated.
 
 # Community
 My main Server (hxr404) is **not** for anything related to these hacks. For anything violating the ToS (including talking about these hacks) you will get banned there.<br>
@@ -211,10 +211,13 @@ Object.values(webpackJsonp.push([
 ```
 </details>
   
-  ## Add guild features.
+  ## Add guild features
 <details>
-  <summary>Enable server features... Replace 'FEATURE' with something like 'PARTNERED' or 'VERIFIED'</summary>
+  <summary>Enable server features... Replace 'FEATURE' with something like 'PARTNERED' or 'VERIFIED'<br>![image](https://user-images.githubusercontent.com/55095883/121220669-1c8adc00-c885-11eb-8033-5deeae919934.png)
+<img src="https://user-images.githubusercontent.com/55095883/121219947-7b9c2100-c884-11eb-99f1-e0a8525512a9.png"></img><img src="https://user-images.githubusercontent.com/55095883/121220469-e9484d00-c884-11eb-816f-2d3b9f46a585.png"></img>)
+</summary>
 
+Unknown Author.
 ```js
 Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}},[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getGuilds!==void 0).exports.default.getGuild('SERVERID').features.add('FEATURE')
 ```
