@@ -9,6 +9,8 @@ I'll update this invite regularly, if my account gets compromised or Discord shu
 <sup>You can join my official Community Server (Invite in Expire-Bot Readme), wich is also the community for my YouTube channel and other ledgit things. Most people on that Server are joined because of these things and **not** because of "hacks", so please don't ask them about hacks.</sup>
 
 # Inner workings of Discord
+<details>
+  <summary>Click here</summary>
 
 ## Discord Token Synatx
 <details>
@@ -35,9 +37,13 @@ If you need privacy, use Signal or Threema or Briar. (or all of them :)
 <sup>How sending Audioo/Video Messages in Discord Works.</sup>
 </details>
 <br>
+</details>
+<br>
 
 # Console Hacks
-
+<details>
+  <summary>Click here</summary>
+  
 ## How to use these Hacks
 It only works on Dekstop Versions (Windows, Linux, MacOS), not on Mobile
 1. Press CTRL + SHIFT + I to toggle Developer Tools (Discord is electronjs wich is basically google chrome)
@@ -222,4 +228,31 @@ Unknown Author.
 ```js
 Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}},[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getGuilds!==void 0).exports.default.getGuild('SERVERID').features.add('FEATURE')
 ```
+</details>
+
+</details>
+
+# The Framework
+<details>
+  <summary>Click here</summary>
+  
+The Framework is a new project, wich combines every Console Hack into a single script.<br>
+Simply Include the source code (.js file) into your Discord Client (Desktop or Web).<br>
+You can either do this by pasting it into your Console (CTRL + SHIFT + I, CTRL + V, ENTER)<br>
+Or by adding it as a Userscript. (You need a Browser Extension, for Firefox I recommend Firemonkey)<br>
+
+## How it works
+The Framework adds an exstensive API, adding the BetterDiscord (+ Powercord) API is planned, so BD plugins can be loaded through the framework.
+Its similar to a modloader of a game, except for it is preconfigured and all good mods are already installed (Open a PR or issue if you want to merge your mods to mainstream)
+Its modularized and each module runs seperatetly in its own Block Scope, not like the Old Nitro hack.
+This should prevent Discord from fixing it, as it no longer depends on hardcoded modifications.
+
+## Features:
+Obviously Free Discord Nitro
+
+## History
+The Free Discord Nitro hack, was extremly unstable and Discord fixed it quickly. Thats when I started working on the Framework. It was the improved Discord Nitro.
+It is much more performant, offers better UX and made development way easier. After successfully merging the old Nitro hack, I continued improving Nitro with more features. And then I thought: why only adding default Nitro features? There are much more awesome features that can be useful as well. And since the Framwerork is modularized, it took about 5 Minutes merging the other Console hacks. And like this a new project was born.
+  
+  
 </details>
