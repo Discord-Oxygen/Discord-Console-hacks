@@ -248,7 +248,11 @@ Its modularized and each module runs seperatetly in its own Block Scope, not lik
 This should prevent Discord from fixing it, as it no longer depends on hardcoded modifications.
 
 ## Features:
-Obviously Free Discord Nitro
+<details>
+  <summary>Screenhots will be added here</summary>
+  
+  </details>
+ 
 
 ## History
 The Free Discord Nitro hack, was extremly unstable and Discord fixed it quickly. Thats when I started working on the Framework. It was the improved Discord Nitro.
