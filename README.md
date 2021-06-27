@@ -230,6 +230,25 @@ Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}},[['']]]).cache
 ```
 </details>
 
+## Change Client Color
+<details>
+  <summary>Changes Your Client Color To Your Likeing.<br><img src="https://cdn.discordapp.com/attachments/841333120870645760/858800547958882334/unknown.png"></img>
+</summary>
+
+Unknown Author.
+```js
+__SECRET_EMOTION__.injectGlobal(`
+    * {
+--background-primary: #000000;
+    --background-secondary: #000000;
+--background-secondary-alt: #070707ff;
+--background-accent: #252525;
+--background-floating: #242424ff;
+    --scrollbar-thin-track: #000000;
+    --channeltextarea-background: #151515;
+    }
+`)
+```
 </details>
 
 # The Framework
