@@ -124,7 +124,7 @@ for (let i in req.c) {
 ```
 </details>
 
-![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)<br>
+![preview](https://cdn.discordapp.com/attachments/852927271958347828/865720717143310346/Screenshot_2021-07-16_182251.png)<br>
 <sup>This isn't a fake screenshot your client will really display this.</sup>
 <br><br>
 
