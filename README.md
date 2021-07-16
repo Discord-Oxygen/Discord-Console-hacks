@@ -110,12 +110,17 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},[['']]]).cach
 Note that other users won't see the badge<br>
 I found some similar proof-of-concept drafts of this randomly on the internet and based my work upon it, but I think [https://github.com/X-x-X-0/discord-js](https://github.com/X-x-X-0/discord-js) could be the original author<br>
 ```js
-Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
-[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
-0).exports.default.getCurrentUser().flags=-1
-Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
-[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
-0).exports.default.getCurrentUser().public_flags=-1
+const req = webpackJsonp.push([[], { extra_id: (module, exports, req) => (module.exports = req) }, [['extra_id']]]);
+for (let i in req.c) {
+  if (req.c.hasOwnProperty(i)) {
+    let m = req.c[i].exports;
+    if (m && m.__esModule && m.default && m.default.getCurrentUser) {
+      m.default.getCurrentUser().flags |= 410575;
+      break;
+    }
+  }
+}
+
 ```
 </details>
 
