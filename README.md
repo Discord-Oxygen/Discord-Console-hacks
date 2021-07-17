@@ -12,7 +12,7 @@ I'll update this invite regularly, if my account gets compromised or Discord shu
 <details>
   <summary>Click here</summary>
 
-## Discord Token Synatx
+## Discord Token Syntax
 <details>
 <table>
   <tr><th></th><th>Example</th></tr>
