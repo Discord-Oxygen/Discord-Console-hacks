@@ -1,7 +1,7 @@
 Note: I'm not affilated with Discord and do not encourage using any of these hacks. Use everything here at your own risk. This is meant for educational purposes only and using these codeblocks may result in your account being disabled/terminated.
 
 # Community
-My main Server (hxr404) is **not** for anything related to these hacks. For anything violating the ToS (including talking about these hacks) you will get banned there.<br>
+My main Server and account (hxr404) is **not** for anything related to these hacks. For anything violating the ToS (including talking about these hacks) you will get banned there.<br>
 Join my alt Server instead: https://discord.gg/T7T3svK3rf (1st invite)<br>
 Marcell D'Avis with the crown Icon is my official alt account. Anyone who does not have the crown Icon on the Server mentioned above is **not** me.
 Please do not use console hacks of people impersonating me, you'll get scammed.<br>
