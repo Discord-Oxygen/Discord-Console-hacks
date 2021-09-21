@@ -1,12 +1,15 @@
 Note: I'm not affilated with Discord and do not encourage using any of these hacks. Use everything here at your own risk. This is meant for educational purposes only and using these codeblocks may result in your account being disabled/terminated.
 
 # Community
-My main Server and account (hxr404) is **not** for anything related to these hacks. For anything violating the ToS (including talking about these hacks) you will get banned there.<br>
-Join my alt Server instead: https://discord.gg/T7T3svK3rf (1st invite)<br>
-Marcell D'Avis with the crown Icon is my official alt account. Anyone who does not have the crown Icon on the Server mentioned above is **not** me.
-Please do not use console hacks of people impersonating me, you'll get scammed.<br>
-I'll update this invite regularly, if my account gets compromised or Discord shuts down the Server, I will create a new "Marcell D'Avis",<br>a new Server and will then update the invite above.<br>
-<sup>You can join my official Community Server (Invite in Expire-Bot Readme), wich is also the community for my YouTube channel and other ledgit things. Most people on that Server are joined because of these things and **not** because of "hacks", so please don't ask them about hacks.</sup>
+We have a Discord Server: (not available rn*) (2nd server)<br>
+Only the Account with a crown Icon on the Server above is my real alt.
+Please don't use console hacks not sent by me, or you might risk loosing your account.<br>
+I'll update this invite regularly, if e.g. my account gets compromised or Discord shuts down the Server, I will create a new Account, a new Server and will then update the invite above.<br>
+Invite Links sent by any third party are NOT the real ones. Only the invite above is real.
+If the invite doesn't work anymore, it means the Server got deleted and you need to wait until I can create a new Account.
+
+\* Currently all my IP Adresses (all exit nodes, I2P (darknet) outproxies, VPN's and proxies) are blacklisted and I can't create any accounts. Allthough I expclicitly distance myself from client modifications, Discord is going after me, which makes it... more... difficult to create new accounts...
+
 
 # Inner workings of Discord
 <details>
@@ -43,6 +46,11 @@ If you need privacy, use Signal or Threema or Briar. (or all of them :)
 # Console Hacks
 <details>
   <summary>Click here</summary>
+  
+## Be Careful!
+As stated in my Disclaimer I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:<br>
+![image](https://user-images.githubusercontent.com/55095883/134189043-4da003de-4829-4d60-888a-6014ebb5c2b8.png)
+
   
 ## How to use these Hacks
 It only works on Dekstop Versions (Windows, Linux, MacOS), not on Mobile
