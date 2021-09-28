@@ -1,14 +1,13 @@
-Note: I'm not affilated with Discord and do not encourage using any of these hacks. Use everything here at your own risk. This is meant for educational purposes only and using these codeblocks may result in your account being disabled/terminated.
+**Note:** I'm not affilated with Discord and do not encourage using any of these hacks. Use everything here at your own risk. This is meant for **educational purposes only** and using these codeblocks may result in your account being disabled/terminated.
 
 # Community
-We have a Discord Server: (not available rn*) (2nd server)<br>
-Only the Account with a crown Icon on the Server above is my real alt.
+~~We have a Discord Server: (not available rn*) (2nd server)~~<br>
+_<details><summary>\*</summary> Currently all my IP Adresses (all exit nodes, I2P (darknet) outproxies, VPN's and proxies) are blacklisted and I can't create any accounts. Allthough I expclicitly put a disclaimer above any code published, Discord is going after me, which makes it... more... difficult to create new accounts...</details>_
+
 Please don't use console hacks not sent by me, or you might risk loosing your account.<br>
 I'll update this invite regularly, if e.g. my account gets compromised or Discord shuts down the Server, I will create a new Account, a new Server and will then update the invite above.<br>
-Invite Links sent by any third party are NOT the real ones. Only the invite above is real.
 If the invite doesn't work anymore, it means the Server got deleted and you need to wait until I can create a new Account.
 
-\* Currently all my IP Adresses (all exit nodes, I2P (darknet) outproxies, VPN's and proxies) are blacklisted and I can't create any accounts. Allthough I expclicitly distance myself from client modifications, Discord is going after me, which makes it... more... difficult to create new accounts...
 
 
 # Inner workings of Discord
@@ -116,7 +115,6 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},[['']]]).cach
   <summary>This script enables all Badges on you client.</summary>
 
 Note that other users won't see the badge<br>
-I found some similar proof-of-concept drafts of this randomly on the internet and based my work upon it, but I think [https://github.com/X-x-X-0/discord-js](https://github.com/X-x-X-0/discord-js) could be the original author<br>
 ```js
 Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 [['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
