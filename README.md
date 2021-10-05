@@ -277,6 +277,8 @@ __SECRET_EMOTION__.injectGlobal(`
 <details>
   <summary>Click here</summary>
   
+  Now in a seperate repo: https://github.com/hxr404/discord-oxygen
+  
 The Framework is a new project, wich combines every Console Hack into a single script.<br>
 Simply Include the source code (.js file) into your Discord Client (Desktop or Web).<br>
 You can either do this by pasting it into your Console (CTRL + SHIFT + I, CTRL + V, ENTER)<br>
