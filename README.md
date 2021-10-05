@@ -1,7 +1,21 @@
 **Note:** I'm not affilated with Discord and do not encourage using any of these hacks. Use everything here at your own risk. This is meant for **educational purposes only** and using these codeblocks may result in your account being disabled/terminated.
 
 # Community
-~~We have a Discord Server: (not available rn*) (2nd server)~~<br>
+<details>
+  <summary>We're switching to Matrix!</summary>
+  
+Matrix is a community-based, decentralized, privacy friendly, end-to-end encrypted (super ecure), uncensorable  and open source messaging protocol, which unlike discord promotes custom clients and modifications. There are multiple different clients available, the most popular one (and also the refrence implementation) is Element. It runs on every OS and even has a pretty good web version. For more information check out https://matrix.org and https://element.io.<br>
+I often get asked: "*If Matrix/Element is so super awesome, why didn't you start using earlier?*"<br>
+Well actually I've been using Matrix for quite a long time now, Anonymous already switched to it many years ago. For me Matrix always has been something serious, I never really thought about using it for this Discord Stuff.
+</details>
+
+Here is the Invite Link to the community: https://matrix.to/#/#discord-oxygen:matrix.org
+
+
+The main community is on matrix, most channels are encrypted and can only be accessed from within matrix.
+For those of you who can't use Matrix we created the Discord Server, its bridged to the Community (=every message you sent in Discord automatically appears in matrix and vice-versa)<br>
+Here's the Invite Link: https://discord.gg/2FqBxRA6fS (2nd server)<br>
+
 _<details><summary>\*</summary> Currently all my IP Adresses (all exit nodes, I2P (darknet) outproxies, VPN's and proxies) are blacklisted and I can't create any accounts. Allthough I expclicitly put a disclaimer above any code published, Discord is going after me, which makes it... more... difficult to create new accounts...</details>_
 
 Please don't use console hacks not sent by me, or you might risk loosing your account.<br>
