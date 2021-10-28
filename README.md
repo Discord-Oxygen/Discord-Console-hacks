@@ -1,16 +1,16 @@
 **Note:** I'm not affilated with Discord and do not encourage using any of these hacks. Use everything here at your own risk. This is meant for **educational purposes only** and using these codeblocks may result in your account being disabled/terminated.
 
 # Community
+
 <details>
   <summary>We're switching to Matrix!</summary>
   
-Matrix is a community-based, decentralized, privacy friendly, end-to-end encrypted (super ecure), uncensorable  and open source messaging protocol, which unlike discord promotes custom clients and modifications. There are multiple different clients available, the most popular one (and also the refrence implementation) is Element. It runs on every OS and even has a pretty good web version. For more information check out https://matrix.org and https://element.io.<br>
+Matrix is a community-based, decentralized, privacy friendly, end-to-end encrypted (super secure), uncensorable and open source messaging protocol, which unlike discord promotes custom clients and modifications. There are multiple different clients available, the most popular one (and also the refrence implementation) is Element. It runs on every OS and even has a pretty good web version. For more information check out https://matrix.org and https://element.io.<br>
 I often get asked: "*If Matrix/Element is so super awesome, why didn't you start using earlier?*"<br>
 Well actually I've been using Matrix for quite a long time now, Anonymous already switched to it many years ago. For me Matrix always has been something serious, I never really thought about using it for this Discord Stuff.
 </details>
 
 Here is the Invite Link to the community: https://matrix.to/#/#discord-oxygen:matrix.org
-
 
 The main community is on matrix, most channels are encrypted and can only be accessed from within matrix.
 For those of you who can't use Matrix we created the Discord Server, its bridged to the Community (=every message you sent in Discord automatically appears in matrix and vice-versa)<br>
@@ -22,13 +22,13 @@ Please don't use console hacks not sent by me, or you might risk loosing your ac
 I'll update this invite regularly, if e.g. my account gets compromised or Discord shuts down the Server, I will create a new Account, a new Server and will then update the invite above.<br>
 If the invite doesn't work anymore, it means the Server got deleted and you need to wait until I can create a new Account.
 
-
-
 # Inner workings of Discord
+
 <details>
   <summary>Click here</summary>
 
 ## Discord Token Syntax
+
 <details>
 <table>
   <tr><th></th><th>Example</th></tr>
@@ -44,12 +44,15 @@ There is this awesome diagram from <a href="https://github.com/hxr404/Discord-Co
 <br>
 
 ## Discords Internal Server Structure
+
 <details>
 Check out this Article about Reverse Engineering Discord, and the proof that Discord acts as a MITM (Intercepts your traffic and decrypts your messsages): <a href="https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626">https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626</a><br>
 That means, Discord Staff can read all of your messages... (still better than Telegram, where anyone can read your messages xD)<br>
 If you need privacy, use Signal or Threema or Briar. (or all of them :)
 
-![grafik](https://user-images.githubusercontent.com/55095883/116671170-e9f5e580-a9a0-11eb-98f9-3bcd65b9fdbf.png)<br>
+![grafik](https://user-images.githubusercontent.com/55095883/116671170-e9f5e580-a9a0-11eb-98f9-3bcd65b9fdbf.png)
+
+<br>
 <sup>How sending Audioo/Video Messages in Discord Works.</sup>
 </details>
 <br>
@@ -57,104 +60,118 @@ If you need privacy, use Signal or Threema or Briar. (or all of them :)
 <br>
 
 # Console Hacks
+
 <details>
   <summary>Click here</summary>
   
+
 ## Be Careful!
+
 As stated in my Disclaimer I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:<br>
+
 ![image](https://user-images.githubusercontent.com/55095883/134189043-4da003de-4829-4d60-888a-6014ebb5c2b8.png)
 
   
+
 ## How to use these Hacks
+
 It only works on Dekstop Versions (Windows, Linux, MacOS), not on Mobile
 1. Press CTRL + SHIFT + I to toggle Developer Tools (Discord is electronjs wich is basically google chrome)
 2. Click on "Console" if not already selected
 3. Paste the script in
 4. Press enter
 
-
 ## Obtaining your Token
+
 <details>
 <summary>Copies your Token into the Clipboard.</summary>
 
 paste this into the Console (while being logged in)
-and before the loading animation has finished, paste it again.
+
 ```js
-window.location.reload();
-copy(document.body.appendChild(document.createElement `iframe`).contentWindow.window.localStorage.token);
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getToken !== undefined) {return copy(m.default.getToken())}if (m.getToken !== undefined) {return copy(m.getToken())}}}]); console.log("%cWorked!", "font-size: 50px"); console.log(`%cYou know have your token in the clipboard!`, "font-size: 16px")
 ```
+
 The token should be in your Clipboard.
-If it's just "null" or "undefined" do the same thing again. Don't wait to lomg inbetween the two times
 </details>
 <br>
 
 ## Logging in using Token
+
 <details>
 <summary>Modifies the Login screen so you can use Tokens to log in.</summary>
 
 paste this into the Console (CTRL + SHIFT + I) on the login screen (you need to be logged out)
+
 ```js
-function login(e){setInterval(()=>{document.body.appendChild(document.createElement`iframe`).contentWindow.localStorage.token=`"${e}"`},50),setTimeout(()=>{window.location.reload()},2500)}function buttonlogin(){login(document.getElementsByClassName("inputDefault-_djjkz input-cIJ7To")[0].value)}var element;(element=document.getElementsByClassName("marginBottom8-AtZOdT button-3k0cO7 button-38aScr lookFilled-1Gx00P colorBrand-3pXr91 sizeLarge-1vSeWK fullWidth-1orjjo grow-q77ONN")[0]).addEventListener("click",buttonlogin),(element=document.getElementsByClassName("marginBottom20-32qID7")[0]).parentElement.removeChild(element),(element=document.getElementsByClassName("colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ defaultMarginh5-2mL-bP")[0]).innerHTML="Token",element.id="Token",(element=document.getElementsByClassName("transitionGroup-aR7y1d qrLogin-1AOZMt")[0]).parentElement.removeChild(element),(element=document.getElementsByClassName("verticalSeparator-3huAjp")[0]).parentElement.removeChild(element);
+function login(e) {setInterval(() => {window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.setToken !== undefined) {return m.default.setToken(e)}if (m.setToken !== undefined) {return m.setToken(e)}}}]);console.log("%cWorked!", "font-size: 50px");}, 50), setTimeout(() => {window.location.reload()}, 2500)}function buttonlogin(){login(document.getElementsByClassName("inputDefault-_djjkz input-cIJ7To")[0].value)}var element;(element=document.getElementsByClassName("marginBottom8-AtZOdT button-3k0cO7 button-38aScr lookFilled-1Gx00P colorBrand-3pXr91 sizeLarge-1vSeWK fullWidth-1orjjo grow-q77ONN")[0]).addEventListener("click",buttonlogin),(element=document.getElementsByClassName("marginBottom20-32qID7")[0]).parentElement.removeChild(element),(element=document.getElementsByClassName("colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ defaultMarginh5-2mL-bP")[0]).innerHTML="Token",element.id="Token",(element=document.getElementsByClassName("transitionGroup-aR7y1d qrLogin-1AOZMt")[0]).parentElement.removeChild(element),(element=document.getElementsByClassName("verticalSeparator-3huAjp")[0]).parentElement.removeChild(element);
 ```
+
 and log in<br>
 Note that this doesn't work with Bot tokens, Bot tokens are different than user tokens, and Discord doesn't support this.<br>
 </details>
 
-![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)<br>
+![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)
+
+<br>
 <sup>Login Screen after running the hack</sup>
 <br><br>
 
 ## Enable Staff Mode
+
 <details>
 <summary>Enables some hidden features and sets your client to staff mode</summary>
  
 This will trick your client into thinking that you are Discord Staff (by modifiying the flags)
-and also enables the secret experiments and Developer Options Menu (where you can get secret unrelesed discord updates,
+and also enables the secret experiments and Developer Options Menu (where you can get secret unrelesed discord updates, 
 emulate a different client, generate build overrides etc.)
 Credit for the Settings hack to https://gist.github.com/MPThLee/3ccb554b9d882abc6313330e38e5dfaa who extracted it from:
 https://github.com/samogot/betterdiscord-plugins (The original Creator)
+
 ```js
-(()=>{const e="function"==typeof webpackJsonp?webpackJsonp([],{__extra_id__:(e,t,n)=>t.default=n},["__extra_id__"]).default:webpackJsonp.push([[],{__extra_id__:(e,t,n)=>e.exports=n},[["__extra_id__"]]]);delete e.m.__extra_id__,delete e.c.__extra_id__;Object.defineProperty(((t,n)=>((t,n={})=>{const{cacheOnly:l=!0}=n;for(let n in e.c)if(e.c.hasOwnProperty(n)){let l=e.c[n].exports;if(l&&l.__esModule&&l.default&&t(l.default))return l.default;if(l&&t(l))return l}if(l)return console.warn("Cannot find loaded module in cache"),null;console.warn("Cannot find loaded module in cache. Loading all modules may have unexpected side effects");for(let n=0;n<e.m.length;++n)try{let l=e(n);if(l&&l.__esModule&&l.default&&t(l.default))return l.default;if(l&&t(l))return l}catch(e){}return console.warn("Cannot find module"),null})(e=>t.every(t=>void 0!==e[t]),n))(["isDeveloper"]),"isDeveloper",{get:e=>1,set:e=>e,configurable:!0})})();
-Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void 0).exports.default.getCurrentUser().flags+=1
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags += 1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.isDeveloper !== undefined) {Object.defineProperty(m.default, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}) console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou know have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}if (m.isDeveloper !== undefined) {Object.defineProperty(m, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}) console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou know have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}}}]);
 ```
+
 </details>
 
 ![discorddevoptions](https://user-images.githubusercontent.com/55095883/116668009-29223780-a99d-11eb-9387-625f10c64196.png)
+
 <sup>Developer Options Setting</sup>
 <br>
 
-
 ## Get all Badges
+
 <details>
   <summary>This script enables all Badges on you client.</summary>
 
 Note that other users won't see the badge<br>
+
 ```js
-Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
-[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
-0).exports.default.getCurrentUser().flags=-1
-Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
-[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
-0).exports.default.getCurrentUser().public_flags=-1
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags = -1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags = -1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().public_flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().public_flags += 1}}}]);
 ```
+
 </details>
 
-![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)<br>
+![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)
+
+<br>
 <sup>This isn't a fake screenshot your client will really display this.</sup>
 <br><br>
 
-
 ## Easy Edit mode
+
 <details>
 <summary>you can use this to make Fake Screenshots without having to do Inspect Element each time</summary>
 
 ```js
 document.designMode = 'on'
 ```
+
 </details>
 <br>
 
 ## Free Discord Nitro (hack)
+
 <details>
   <summary>Get some Nitro features without buying Nitro</summary>
  
@@ -163,6 +180,7 @@ Be extra careful with scripts that claim to do this, this script is the only wor
 Credit to https://github.com/An00nymushun/DiscordFreeEmojis for the Emoji handling part.<br>
 Note that not every feature is supported as, some things that run Server Side can't be simulated.
 But basic features (like animated emojis) should work.
+
 ```js
 /*
 I removed the code bc this shouldn't go public. Ppl would just copy and paste this anywhere and bad ppl would backdoor it.
@@ -171,41 +189,39 @@ Its a WIP, join the Server Linked in #Community if you want to know more.
 If you are a developer and want to contribute, also DM me.
 */
 ```
+
 </details>
 
 ![grafik](https://user-images.githubusercontent.com/55095883/116668188-5d95f380-a99d-11eb-96cf-a0e2dfc6bb23.png)
+
 <sup>The Subscription Overview. The Account used for the Screenshot **didn't** buy Nitro</sup>
 <br>
 
-## oauth Bot and System
-<details>
-  <summary>test. Doesn't work. Don't run this</summary>
-
-```js
-Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
-[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
-0).exports.default.getCurrentUser().bot=true
-```
-```js
-Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
-[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getCurrentUser!==void
-0).exports.default.getCurrentUser().system=true
-```
 </details>
 
-![grafik](https://user-images.githubusercontent.com/55095883/116669184-908cb700-a99e-11eb-9a7f-62c0d19e5486.png)<br>
+![grafik](https://user-images.githubusercontent.com/55095883/116669184-908cb700-a99e-11eb-9a7f-62c0d19e5486.png)
+
+<br>
 <sup>Using the System Badge to make funny fake announcements</sup><br>
-![grafik](https://user-images.githubusercontent.com/55095883/116669793-47893280-a99f-11eb-972d-bcc8e07c65dd.png)<br>
+
+![grafik](https://user-images.githubusercontent.com/55095883/116669793-47893280-a99f-11eb-972d-bcc8e07c65dd.png)
+
+<br>
 <sup>Fake Bot badge</sup><br>
-![grafik](https://user-images.githubusercontent.com/55095883/116669897-6982b500-a99f-11eb-8dfc-53caa1d312e3.png)<br>
+
+![grafik](https://user-images.githubusercontent.com/55095883/116669897-6982b500-a99f-11eb-8dfc-53caa1d312e3.png)
+
+<br>
 <sup>User Pop-Out with Bot badge</sup><br>
 <br>
 
 ## Get hidden Channel ID's
+
 <details>
   <summary>Displays the ID's of channel that you can't see without hacks.</summary>
 
 All credit to [https://github.com/X-x-X-0/discord-js](https://github.com/X-x-X-0/discord-js)
+
 ```js
 Object.values(webpackJsonp.push([
     [], {
@@ -218,23 +234,31 @@ Object.values(webpackJsonp.push([
     ]
 ]).cache).find(m => m.exports && m.exports.default && m.exports.default.getPrivateChannelIds !== void 0).exports.default.getPrivateChannelIds()
 ```
+
 </details>
 
-![grafik](https://user-images.githubusercontent.com/55095883/116670257-cda57900-a99f-11eb-8f96-7d8d54754535.png)<br>
+![grafik](https://user-images.githubusercontent.com/55095883/116670257-cda57900-a99f-11eb-8f96-7d8d54754535.png)
+
+<br>
 <sup>Example Output of this command</sup><bbr>
 <br>
   
+
 ## Changing Password
+
 <details>
   <summary>Change the Password of the Account, thats currently logged in.</summary>
 
-  ```js
+  
+
+```js
   await fetch("https://discord.com/api/v9/users/@me", {
-    "credentials": "include",
-    "body": "{\"password\":\"oldpassword\",\"new_password\":\"hackedbyhxr404\"}",
-    "method": "PATCH",
-});
+      "credentials": "include",
+      "body": "{\"password\":\"oldpassword\",\"new_password\":\"hackedbyhxr404\"}",
+      "method": "PATCH",
+  });
 ```
+
 </details>
   
   ## Add guild features
@@ -245,17 +269,30 @@ Object.values(webpackJsonp.push([
 </summary>
 
 Unknown Author.
+
 ```js
-Object.values(webpackJsonp.push([[],{['']:(_,e,r)=>{e.cache=r.c}},[['']]]).cache).find(m=>m.exports&&m.exports.default&&m.exports.default.getGuilds!==void 0).exports.default.getGuild('SERVERID').features.add('FEATURE')
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getGuilds !== void 0).exports.default.getGuild('SERVERID').features.add('FEATURE')
 ```
+
 </details>
 
 ## Change Client Color
+
 <details>
   <summary>Changes Your Client Color To Your Likeing.<br><img src="https://cdn.discordapp.com/attachments/841333120870645760/858800547958882334/unknown.png"></img>
 </summary>
 
 Unknown Author.
+
 ```js
 __SECRET_EMOTION__.injectGlobal(`
     * {
@@ -269,11 +306,13 @@ __SECRET_EMOTION__.injectGlobal(`
     }
 `)
 ```
+
 </details>
 
 </details>
 
 # The Framework
+
 <details>
   <summary>Click here</summary>
   
@@ -285,19 +324,21 @@ You can either do this by pasting it into your Console (CTRL + SHIFT + I, CTRL +
 Or by adding it as a Userscript. (You need a Browser Extension, for Firefox I recommend Firemonkey)<br>
 
 ## How it works
+
 The Framework adds an exstensive API, adding the BetterDiscord (+ Powercord) API is planned, so BD plugins can be loaded through the framework.
 Its similar to a modloader of a game, except for it is preconfigured and all good mods are already installed (Open a PR or issue if you want to merge your mods to mainstream)
 Its modularized and each module runs seperatetly in its own Block Scope, not like the Old Nitro hack.
 This should prevent Discord from fixing it, as it no longer depends on hardcoded modifications.
 
 ## Features:
+
 <details>
   <summary>Screenhots will be added here</summary>
-  
-  </details>
+</details>
  
 
 ## History
+
 The Free Discord Nitro hack, was extremly unstable and Discord fixed it quickly. Thats when I started working on the Framework. It was the improved Discord Nitro.
 It is much more performant, offers better UX and made development way easier. After successfully merging the old Nitro hack, I continued improving Nitro with more features. And then I thought: why only adding default Nitro features? There are much more awesome features that can be useful as well. And since the Framwerork is modularized, it took about 5 Minutes merging the other Console hacks. And like this a new project was born.
   
