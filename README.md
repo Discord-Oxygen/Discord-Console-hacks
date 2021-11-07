@@ -207,16 +207,7 @@ Object.values(webpackJsonp.push([[],{[''] :(_,e,r)=>{e.cache=r.c}},
 
 All credit to [https://github.com/X-x-X-0/discord-js](https://github.com/X-x-X-0/discord-js)
 ```js
-Object.values(webpackJsonp.push([
-    [], {
-        ['']: (_, e, r) => {
-            e.cache = r.c
-        }
-    },
-    [
-        ['']
-    ]
-]).cache).find(m => m.exports && m.exports.default && m.exports.default.getPrivateChannelIds !== void 0).exports.default.getPrivateChannelIds()
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getPrivateChannelIds !== void 0) {return m.default.getPrivateChannelIds();}if (m.getPrivateChannelIds !== void 0) {return m.getPrivateChannelIds()}}}]);
 ```
 </details>
 
