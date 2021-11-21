@@ -129,7 +129,7 @@ Credit for the Settings hack to https://gist.github.com/MPThLee/3ccb554b9d882abc
 https://github.com/samogot/betterdiscord-plugins (The original Creator)
 
 ```js
-window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags += 1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.isDeveloper !== undefined) {Object.defineProperty(m.default, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}); console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou know have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}if (m.isDeveloper !== undefined) {Object.defineProperty(m, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}); console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou know have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}}}]);
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags += 1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.isDeveloper !== undefined) {Object.defineProperty(m.default, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}); console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou now have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}if (m.isDeveloper !== undefined) {Object.defineProperty(m, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}); console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou now have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}}}]);
 ```
 
 </details>
@@ -190,8 +190,6 @@ If you are a developer and want to contribute, also DM me.
 */
 ```
 
-</details>
-
 ![grafik](https://user-images.githubusercontent.com/55095883/116668188-5d95f380-a99d-11eb-96cf-a0e2dfc6bb23.png)
 
 <sup>The Subscription Overview. The Account used for the Screenshot **didn't** buy Nitro</sup>
@@ -199,40 +197,13 @@ If you are a developer and want to contribute, also DM me.
 
 </details>
 
-![grafik](https://user-images.githubusercontent.com/55095883/116669184-908cb700-a99e-11eb-9a7f-62c0d19e5486.png)
-
-<br>
-<sup>Using the System Badge to make funny fake announcements</sup><br>
-
-![grafik](https://user-images.githubusercontent.com/55095883/116669793-47893280-a99f-11eb-972d-bcc8e07c65dd.png)
-
-<br>
-<sup>Fake Bot badge</sup><br>
-
-![grafik](https://user-images.githubusercontent.com/55095883/116669897-6982b500-a99f-11eb-8dfc-53caa1d312e3.png)
-
-<br>
-<sup>User Pop-Out with Bot badge</sup><br>
-<br>
-
 ## Get hidden Channel ID's
 
 <details>
   <summary>Displays the ID's of channel that you can't see without hacks.</summary>
 
-All credit to [https://github.com/X-x-X-0/discord-js](https://github.com/X-x-X-0/discord-js)
-
 ```js
-Object.values(webpackJsonp.push([
-    [], {
-        ['']: (_, e, r) => {
-            e.cache = r.c
-        }
-    },
-    [
-        ['']
-    ]
-]).cache).find(m => m.exports && m.exports.default && m.exports.default.getPrivateChannelIds !== void 0).exports.default.getPrivateChannelIds()
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getPrivateChannelIds !== undefined) {return console.log(m.default.getPrivateChannelIds())}if (m.getPrivateChannelIds !== undefined) {return console.log(m.getPrivateChannelIds())}}}]);
 ```
 
 </details>
@@ -252,11 +223,10 @@ Object.values(webpackJsonp.push([
   
 
 ```js
-  await fetch("https://discord.com/api/v9/users/@me", {
-      "credentials": "include",
-      "body": "{\"password\":\"oldpassword\",\"new_password\":\"hackedbyhxr404\"}",
-      "method": "PATCH",
-  });
+  let oldpassword = "";
+  let newpassword = "";
+
+  window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getToken !== undefined) {fetch("https://discord.com/api/v9/users/@me", { "credentials": "include", "body": "{\"password\":\"" + oldpassword + "\",\"new_password\":\"" + newpassword + "\"}", "method": "PATCH", "headers": { "Authorization": m.default.getToken(), "Content-Type":"application/json" }}); return}if (m.getToken !== undefined) {fetch("https://discord.com/api/v9/users/@me", {"credentials": "include","body": "{\"password\":\"" + oldpassword + "\",\"new_password\":\"" + newpassword + "\"}","method":"PATCH","headers": {"Authorization": m.getToken(), "Content-Type":"application/json"}});return}}}]);
 ```
 
 </details>
@@ -271,16 +241,10 @@ Object.values(webpackJsonp.push([
 Unknown Author.
 
 ```js
-Object.values(webpackJsonp.push([
-    [], {
-        ['']: (_, e, r) => {
-            e.cache = r.c
-        }
-    },
-    [
-        ['']
-    ]
-]).cache).find(m => m.exports && m.exports.default && m.exports.default.getGuilds !== void 0).exports.default.getGuild('SERVERID').features.add('FEATURE')
+let serverid = "";
+let feature = "";
+
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getGuilds !== undefined) {return m.default.getGuild(serverid).features.add(feature)}if (m.getGuilds !== undefined) {return m.getGuild(serverid).features.add(feature)}}}]);
 ```
 
 </details>
