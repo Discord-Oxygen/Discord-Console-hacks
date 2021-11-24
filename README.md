@@ -184,8 +184,8 @@ But basic features (like animated emojis) should work.
 /*
 I removed the code bc this shouldn't go public. Ppl would just copy and paste this anywhere and bad ppl would backdoor it.
 Also I don't want Discord to fix this.
-Its a WIP, join the Server Linked in #Community if you want to know more.
-If you are a developer and want to contribute, also DM me.
+
+This script was replaced by Discord Oxygen.
 */
 ```
 
