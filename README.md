@@ -16,7 +16,6 @@ The main community is on matrix, most channels are encrypted and can only be acc
 For those of you who can't use Matrix we created the Discord Server, its bridged to the Community (=every message you sent in Discord automatically appears in matrix and vice-versa)<br>
 Here's the Invite Link: https://discord.gg/2FqBxRA6fS (2nd server)<br>
 
-_<details><summary>\*</summary> Currently all my IP Adresses (all exit nodes, I2P (darknet) outproxies, VPN's and proxies) are blacklisted and I can't create any accounts. Allthough I expclicitly put a disclaimer above any code published, Discord is going after me, which makes it... more... difficult to create new accounts...</details>_
 
 Please don't use console hacks not sent by me, or you might risk loosing your account.<br>
 I'll update this invite regularly, if e.g. my account gets compromised or Discord shuts down the Server, I will create a new Account, a new Server and will then update the invite above.<br>
