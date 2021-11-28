@@ -250,7 +250,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 ## Delete Webhook
 <details>
-  <summary>Delete a webhook using its webhook URL</summary>
+  <summary>Delete a webhook using it's webhook URL</summary>
   
   ```js
     let webhookURL = "PUT_WEBHOOK_URL_HERE";  
