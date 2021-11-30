@@ -248,10 +248,23 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 </details>
 
+## Delete Webhook
+<details>
+  <summary>Delete a webhook using it's webhook URL</summary>
+  
+  ```js
+    let webhookURL = "PUT_WEBHOOK_URL_HERE";  
+
+    await fetch(webhookURL, {
+      "method": "DELETE",
+    });
+  ```
+</details>
+
 ## Change Client Color
 
 <details>
-  <summary>Changes Your Client Color To Your Likeing.<br><img src="https://cdn.discordapp.com/attachments/841333120870645760/858800547958882334/unknown.png"></img>
+  <summary>Changes Your Client Color To Your Liking.<br><img src="https://cdn.discordapp.com/attachments/841333120870645760/858800547958882334/unknown.png"></img>
 </summary>
 
 Unknown Author.
