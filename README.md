@@ -261,13 +261,13 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
   ```
 </details>
 
-## Change Client Color
+## Phone, Email verification bypass
 
 <details>
-  <summary>Changes Your Client Color To Your Liking.
+  <summary>Bypass Phone and email verification in server, this cannot let you send message but you still can connect and and talk in voice channels
 </summary>
 
-Unknown Author.
+
 ```js
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().phone = '+1234567890';}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().phone = '+1234567890'}}}]);
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().email = 'email@email.com';}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().email = 'email@email.com'}}}]);
