@@ -310,7 +310,6 @@ __SECRET_EMOTION__.injectGlobal(`
 
 </details>
 
-</details>
 
 # The Framework
 
