@@ -188,13 +188,40 @@ Also I don't want Discord to fix this.
 This script was replaced by Discord Oxygen.
 */
 ```
+</details>
 
 ![grafik](https://user-images.githubusercontent.com/55095883/116668188-5d95f380-a99d-11eb-96cf-a0e2dfc6bb23.png)
 
 <sup>The Subscription Overview. The Account used for the Screenshot **didn't** buy Nitro</sup>
 <br>
 
+## View NSFW Channels
+
+<details>
+  <summary>Displays NSFW Channels On A below 18 account.</summary>
+<br>
+  
+Only use this script if you are 18+!
+```js
+var findModule=(item)=>window.webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.keys(req.c).map((x)=>req.c[x].exports).filter((x)=>x)){if(m.default&&m.default[item]!==undefined)return m.default}}])
+findModule('getCurrentUser').getCurrentUser().nsfwAllowed = true
+```
+
 </details>
+  
+![grafik](https://raw.githubusercontent.com/PndaBoi/pndaboi/main/6zsLEjYET0.png)
+
+<br>
+<sup>Before Running The Script ^^</sup><bbr>
+<br>
+  
+![grafik](https://raw.githubusercontent.com/PndaBoi/pndaboi/main/ypzEY7Yw0u.png)
+
+<br>
+<sup>After Running The Script ^^</sup><bbr>
+<br>
+  
+
 
 ## Get hidden Channel ID's
 
