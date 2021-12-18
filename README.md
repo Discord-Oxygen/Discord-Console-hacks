@@ -188,13 +188,12 @@ Also I don't want Discord to fix this.
 This script was replaced by Discord Oxygen.
 */
 ```
+</details>
 
 ![grafik](https://user-images.githubusercontent.com/55095883/116668188-5d95f380-a99d-11eb-96cf-a0e2dfc6bb23.png)
 
 <sup>The Subscription Overview. The Account used for the Screenshot **didn't** buy Nitro</sup>
 <br>
-
-</details>
 
 ## View NSFW Channels
 
