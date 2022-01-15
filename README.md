@@ -303,6 +303,29 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 </details>
 
+## Fake Mute/Deafen
+
+<details>
+  <summary>Spoofing discord that you're mute but you still can talk xD
+</summary>
+
+1. Join a voice channel and mute/deafen yourself
+2. Execute the script
+3. Unmute/deafen and talk
+
+```js
+var username = window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().username;}}}]);
+var text = new TextDecoder("utf-8");
+WebSocket.prototype.original = WebSocket.prototype.send;
+WebSocket.prototype.send = function(data) {
+if (Object.prototype.toString.call(data) === "[object ArrayBuffer]") {
+if (text.decode(data).includes("self_deaf")) data = data.replace('"self_mute":false', 'ImLorio');
+}
+WebSocket.prototype.original.apply(this, [data]);
+```
+
+</details>
+
 ## Change Client Color
 
 <details>
