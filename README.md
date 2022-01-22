@@ -14,7 +14,7 @@ Here is the Invite Link to the community: https://matrix.to/#/#discord-oxygen:ma
 
 The main community is on matrix, most channels are encrypted and can only be accessed from within matrix.
 For those of you who can't use Matrix we created the Discord Server, its bridged to the Community (=every message you sent in Discord automatically appears in matrix and vice-versa)<br>
-Here's the Invite Link: https://discord.gg/2FqBxRA6fS (2nd server)<br>
+Here's the Invite Link: https://discord.gg/vs979cxECA (3rd server)<br>
 
 
 Please don't use console hacks not sent by me, or you might risk loosing your account.<br>
