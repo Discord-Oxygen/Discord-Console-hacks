@@ -303,25 +303,16 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 </details>
 
-## Fake Mute/Deafen
+## Discord Activities
 
 <details>
-  <summary>Spoofing discord that you're mute but you still can talk xD
+  <summary>Added a activity button in voice channel
 </summary>
 
-1. Join a voice channel and mute/deafen yourself
-2. Execute the script
-3. Unmute/deafen and talk
 
 ```js
-var username = window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().username;}}}]);
-var text = new TextDecoder("utf-8");
-WebSocket.prototype.original = WebSocket.prototype.send;
-WebSocket.prototype.send = function(data) {
-if (Object.prototype.toString.call(data) === "[object ArrayBuffer]") {
-if (text.decode(data).includes("self_deaf")) data = data.replace('"self_mute":false', username);
-}
-WebSocket.prototype.original.apply(this, [data]);
+var AppIds = ["755827207812677713", "832012774040141894", "832013003968348200", "902271654783242291", "879863976006127627", "832025144389533716", "879863686565621790", "852509694341283871", "880218394199220334", "773336526917861400", "814288819477020702", "879864070101172255", "879863881349087252", "832012854282158180", "763133495793942528", "880218832743055411", "878067427668275241", "879864010126786570", "879864104980979792", "891001866073296967", "832012586023256104", "832012682520428625", "832013108234289153"]
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getEnabledAppIds !== undefined) {return m.default.getEnabledAppIds = () => AppIds}}}]);
 ```
 
 </details>
