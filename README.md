@@ -315,6 +315,7 @@ var AppIds = ["755827207812677713", "832012774040141894", "832013003968348200", 
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getEnabledAppIds !== undefined) {return m.default.getEnabledAppIds = () => AppIds}}}]);
 ```
 
+<img src="https://i.ibb.co/rmskPSH/image.png"></img>
 </details>
 
 ## Change Client Color
