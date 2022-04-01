@@ -10,16 +10,16 @@ I often get asked: "*If Matrix/Element is so super awesome, why didn't you start
 Well actually I've been using Matrix for quite a long time now, Anonymous already switched to it many years ago. For me Matrix always has been something serious, I never really thought about using it for this Discord Stuff.
 </details>
 
-Here is the Invite Link to the community: https://matrix.to/#/#discord-oxygen:matrix.org
+Here's the invite to the community: https://matrix.to/#/#discord-oxygen:matrix.org
 
 The main community is on matrix, most channels are encrypted and can only be accessed from within matrix.
-For those of you who can't use Matrix we created the Discord Server, its bridged to the Community (=every message you sent in Discord automatically appears in matrix and vice-versa)<br>
-Here's the Invite Link: https://discord.gg/vs979cxECA (3rd server)<br>
+For those of you who can't use Matrix we created the Discord Server, its bridged to the community (=every message you sent in Discord automatically appears in matrix and vice-versa)<br>
+Here's the invite link: https://discord.gg/vs979cxECA (3rd server)<br>
 
 
-Please don't use console hacks not sent by me, or you might risk loosing your account.<br>
-I'll update this invite regularly, if e.g. my account gets compromised or Discord shuts down the Server, I will create a new Account, a new Server and will then update the invite above.<br>
-If the invite doesn't work anymore, it means the Server got deleted and you need to wait until I can create a new Account.
+Please don't use console hacks not sent by me, or you might risk losing your account.<br>
+I'll update this invite regularly, if e.g. my account gets compromised or Discord shuts down the Server, I will create a new account, a new server and then will update the invite above.<br>
+If the invite doesn't work anymore, it means the server got deleted and you need to wait until I can create a new account.
 
 # Inner workings of Discord
 
@@ -66,7 +66,7 @@ If you need privacy, use Signal or Threema or Briar. (or all of them :)
 
 ## Be Careful!
 
-As stated in my Disclaimer I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:<br>
+As stated in my Disclaimer, I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:<br>
 
 ![image](https://user-images.githubusercontent.com/55095883/134189043-4da003de-4829-4d60-888a-6014ebb5c2b8.png)
 
