@@ -4,7 +4,7 @@
 
 <details>
   <summary>We're switching to Matrix!</summary>
-  
+
 Matrix is a community-based, decentralized, privacy friendly, end-to-end encrypted (super secure), uncensorable and open source messaging protocol, which unlike discord promotes custom clients and modifications. There are multiple different clients available, the most popular one (and also the refrence implementation) is Element. It runs on every OS and even has a pretty good web version. For more information check out https://matrix.org and https://element.io.<br>
 I often get asked: "*If Matrix/Element is so super awesome, why didn't you start using earlier?*"<br>
 Well actually I've been using Matrix for quite a long time now, Anonymous already switched to it many years ago. For me Matrix always has been something serious, I never really thought about using it for this Discord stuff.
@@ -62,7 +62,7 @@ If you need privacy, use Signal or Threema or Briar. (or all of them :)
 
 <details>
   <summary>Click Here</summary>
-  
+
 
 ## Be Careful!
 
@@ -70,7 +70,7 @@ As stated in my disclaimer, I don't promote using any kind of client modificatio
 
 ![image](https://user-images.githubusercontent.com/55095883/134189043-4da003de-4829-4d60-888a-6014ebb5c2b8.png)
 
-  
+
 
 ## How to use these Hacks
 
@@ -120,9 +120,9 @@ Note that this doesn't work with bot tokens. Bot tokens are different than user 
 
 <details>
 <summary>Enables some hidden features and sets your client to staff mode</summary>
- 
+
 This will trick your client into thinking that you are a Discord Staff (by modifiying the flags)
-and also enables the secret experiments and Developer Options Menu (where you can get secret unreleased discord updates, 
+and also enables the secret experiments and Developer Options Menu (where you can get secret unreleased discord updates,
 emulate a different client, generate build overrides etc.)
 Credit for the Settings hack to https://gist.github.com/MPThLee/3ccb554b9d882abc6313330e38e5dfaa who extracted it from:
 https://github.com/samogot/betterdiscord-plugins (The original creator)
@@ -179,7 +179,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 ![grafik](https://user-images.githubusercontent.com/55095883/116669897-6982b500-a99f-11eb-8dfc-53caa1d312e3.png)<br>
 <sup>User Pop-Out with Bot badge</sup><br>
 <br>
-  
+
 ## Easy Edit mode
 
 <details>
@@ -196,7 +196,7 @@ document.designMode = 'on'
 
 <details>
   <summary>Get some Nitro features without having to buy Nitro</summary>
- 
+
 Tricks your client into thinking you have Nitro. Converts the API request into non-nitro requests, so Discord won't notice that you don't have Nitro.
 Be extra careful with scripts that claim to do this, this script is the only working one. If you find a copy of this script not directly provided by me or this repo, please report it to me, its probably a scam.<br>
 Credit to https://github.com/An00nymushun/DiscordFreeEmojis for the emoji handling part.<br>
@@ -218,12 +218,27 @@ This script was replaced by Discord Oxygen (https://github.com/hxr404/Discord-Ox
 <sup>The Subscription Overview. The account used for the screenshot **didn't** buy Nitro</sup>
 <br>
 
+
+## Discord Nitro Simulator
+
+  <details>
+    <summary>Spoofs your client into thinking you have Nitro.</summary>
+<br>
+
+Author: [tungdo0602](https://github.com/tungdo0602/Discord-Nitro-Simulator)
+```js
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().premiumType = 2;}}}]);
+```
+
+</details>
+
+
 ## View NSFW Channels
 
-<details>
+  <details>
   <summary>Displays NSFW channels on an under-18 account.</summary>
 <br>
-  
+
 Only use this script if you are 18+!
 ```js
 var findModule=(item)=>window.webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.keys(req.c).map((x)=>req.c[x].exports).filter((x)=>x)){if(m.default&&m.default[item]!==undefined)return m.default}}])
@@ -231,19 +246,19 @@ findModule('getCurrentUser').getCurrentUser().nsfwAllowed = true
 ```
 
 </details>
-  
+
 ![grafik](https://raw.githubusercontent.com/PndaBoi/pndaboi/main/6zsLEjYET0.png)
 
 <br>
 <sup>Before Running The Script ^^</sup><bbr>
 <br>
-  
+
 ![grafik](https://raw.githubusercontent.com/PndaBoi/pndaboi/main/ypzEY7Yw0u.png)
 
 <br>
 <sup>After Running The Script ^^</sup><bbr>
 <br>
-  
+
 
 
 ## Get hidden Channel ID's
@@ -262,14 +277,14 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 <br>
 <sup>Example Output of this command</sup><bbr>
 <br>
-  
+
 
 ## Changing Password
 
 <details>
   <summary>Changes the password of the account thats currently logged in.</summary>
 
-  
+
 
 ```js
   let oldpassword = "";
@@ -279,8 +294,8 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 ```
 
 </details>
-  
-  ## Add guild features
+
+## Add guild features
 <details>
   <summary>Enable server features... Replace 'FEATURE' with something like 'PARTNERED' or 'VERIFIED'<br><img src="https://user-images.githubusercontent.com/55095883/121220849-4a702080-c885-11eb-965c-317749da0196.png"></img>
 
@@ -301,7 +316,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 ## Delete Webhook
 <details>
   <summary>Delete a webhook using it's webhook URL</summary>
-  
+
   ```js
     let webhookURL = "PUT_WEBHOOK_URL_HERE";  
 
@@ -371,9 +386,9 @@ __SECRET_EMOTION__.injectGlobal(`
 
 <details>
   <summary>Click here</summary>
-  
-  Now in a seperate repo: https://github.com/hxr404/discord-oxygen
-  
+
+Now in a seperate repo: https://github.com/hxr404/discord-oxygen
+
 The Framework is a new project, wich combines every console hack into a single script.<br>
 Simply include the source code (.js file) into your Discord client (Desktop or Web).<br>
 You can either do this by pasting it into your console (CTRL + SHIFT + I, CTRL + V, ENTER)<br>
@@ -391,12 +406,12 @@ This should prevent Discord from fixing it, as it no longer depends on hardcoded
 <details>
   <summary>Screenhots will be added here</summary>
 </details>
- 
+
 
 ## History
 
 The free Discord Nitro hack was extremly unstable and Discord fixed it quickly. That's when I started working on the framework. It was the improved Discord Nitro.
 It is much more performant, offering better UX and made development way easier. After successfully merging the old Nitro hack, I continued improving Nitro with more features. And then I thought: why only add default Nitro features? There are so much more awesome features that could be useful as well. Since the framwerork is modularized, it took about 5 minutes merging the other console hacks. And like this a new project was born.
-  
-  
+
+
 </details>
