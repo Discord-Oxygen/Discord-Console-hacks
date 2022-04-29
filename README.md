@@ -45,9 +45,8 @@ There is this awesome diagram from <a href="https://github.com/hxr404/Discord-Co
 ## Discords Internal Server Structure
 
 <details>
-Check out this article about Reverse Engineering Discord, and the proof that Discord acts as a MITM (Intercepts your traffic and decrypts your messsages): <a href="https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626">https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626</a><br>
-That means, Discord Staff can read all of your messages... (still better than Telegram, where anyone can read your messages xD)<br>
-If you need privacy, use Signal or Threema or Briar. (or all of them :)
+Check out this article about Reverse Engineering Discord, and the proof that Discord decrypts your encrypted data: <a href="https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626">https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626</a><br>
+They can also read your messages (e.g. in DM's), log all edits and deleted messages and record your voice calls.
 
 ![grafik](https://user-images.githubusercontent.com/55095883/116671170-e9f5e580-a9a0-11eb-98f9-3bcd65b9fdbf.png)
 
