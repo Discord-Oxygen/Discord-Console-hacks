@@ -121,10 +121,9 @@ Note that this doesn't work with bot tokens. Bot tokens are different than user 
 <summary>Enables some hidden features and sets your client to staff mode</summary>
  
 This will trick your client into thinking that you are a Discord Staff (by modifiying the flags)
-and also enables the secret experiments and Developer Options Menu (where you can get secret unreleased discord updates, 
+and will also enable the secret experiments, Developer Options Menu, and more (where you can get secret unreleased discord updates, 
 emulate a different client, generate build overrides etc.)
-Credit for the Settings hack to https://gist.github.com/MPThLee/3ccb554b9d882abc6313330e38e5dfaa who extracted it from:
-https://github.com/samogot/betterdiscord-plugins (The original creator)
+Credit for the Settings hack to https://canary.discord.com/channels/1000926524452647132/1000955970681319494/1004036518937116752 via the [Replugged](https://github.com/replugged-org) Discord server.
 
 ```js
 const c = window.webpackChunkdiscord_app.push([[ Symbol() ], {}, ({ c }) => Object.values(c)]);
