@@ -127,12 +127,20 @@ Credit for the Settings hack to https://gist.github.com/MPThLee/3ccb554b9d882abc
 https://github.com/samogot/betterdiscord-plugins (The original creator)
 
 ```js
-window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags += 1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.isDeveloper !== undefined) {Object.defineProperty(m.default, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}); console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou now have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}if (m.isDeveloper !== undefined) {Object.defineProperty(m, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}); console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou now have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}}}]);
+const c = window.webpackChunkdiscord_app.push([[ Symbol() ], {}, ({ c }) => Object.values(c)]);
+userMod = c.find(x => x?.exports?.default?.getUsers).exports.default.__proto__;
+nodes = Object.values((c.find(x => typeof x?.exports?.default?.isDeveloper !== "undefined")).exports.default._dispatcher._dependencyGraph.nodes);
+nodes.find(x => x.name === "ExperimentStore").actionHandler["CONNECTION_OPEN"]({ user: { flags: 1 }, type: "CONNECTION_OPEN", experiments: [] });
+oldGCUser = userMod.getCurrentUser;
+userMod.getCurrentUser = () => { return { hasFlag: () => true }};
+nodes.find(x => x.name === "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]();
+userMod.getCurrentUser = oldGCUser;
+// Thanks to 257109471589957632
 ```
 
 </details>
 
-![discorddevoptions](https://user-images.githubusercontent.com/55095883/116668009-29223780-a99d-11eb-9387-625f10c64196.png)
+![discorddevoptions](https://cdn.discordapp.com/attachments/788198099067076638/1004823296489029702/unknown.png)
 
 <sup>Developer Options Setting</sup>
 <br>
@@ -145,12 +153,18 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 Note that other users won't see the badge, only you can.<br>
 
 ```js
-window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags = -1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags = -1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().public_flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().public_flags += 1}}}]);
+webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.keys(req.c).map((x)=>req.c[x].exports).filter((x)=>x)){if(m.default&&m.default.getCurrentUser!==undefined){return m.default.getCurrentUser().flags=99999999999}}}]);
+```
+to get all badges and place your account under quarantine (visually):
+```js
+webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.keys(req.c).map((x)=>req.c[x].exports).filter((x)=>x)){if(m.default&&m.default.getCurrentUser!==undefined){return m.default.getCurrentUser().flags=-1}}}]);
 ```
 
 </details>
 
 ![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)
+
+![preview](https://cdn.discordapp.com/attachments/788198099067076638/1004823731056676954/unknown.png)
 
 <br>
 <sup>This isn't a fake screenshot, your client will really display this.</sup>
