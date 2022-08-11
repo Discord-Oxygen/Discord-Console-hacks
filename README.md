@@ -126,15 +126,20 @@ emulate a different client, generate build overrides etc.)
 Credit for the Settings hack to https://canary.discord.com/channels/1000926524452647132/1000955970681319494/1004036518937116752 via the [Replugged](https://github.com/replugged-org) Discord server.
 
 ```js
-const c = window.webpackChunkdiscord_app.push([[ Symbol() ], {}, ({ c }) => Object.values(c)]);
-userMod = c.find(x => x?.exports?.default?.getUsers).exports.default.__proto__;
-nodes = Object.values((c.find(x => typeof x?.exports?.default?.isDeveloper !== "undefined")).exports.default._dispatcher._dependencyGraph.nodes);
-nodes.find(x => x.name === "ExperimentStore").actionHandler["CONNECTION_OPEN"]({ user: { flags: 1 }, type: "CONNECTION_OPEN", experiments: [] });
-oldGCUser = userMod.getCurrentUser;
-userMod.getCurrentUser = () => { return { hasFlag: () => true }};
-nodes.find(x => x.name === "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]();
-userMod.getCurrentUser = oldGCUser;
-// Thanks to 257109471589957632
+(() => {
+let wpRequire;
+window.webpackChunkdiscord_app.push([[ Math.random() ], {}, (req) => { wpRequire = req; }]);
+mod = Object.values(wpRequire.c).find(x => typeof x?.exports?.default?.isDeveloper !== "undefined")
+usermod = Object.values(wpRequire.c).find(x => x?.exports?.default?.getUsers)
+nodes = Object.values(mod.exports.default._dispatcher._actionHandlers._dependencyGraph.nodes)
+try {
+    nodes.find(x => x.name == "ExperimentStore").actionHandler["OVERLAY_INITIALIZE"]({user: {flags: 1}})
+} catch (e) {}
+oldGetUser = usermod.exports.default.__proto__.getCurrentUser;
+usermod.exports.default.__proto__.getCurrentUser = () => ({hasFlag: () => true})
+nodes.find(x => x.name == "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]()
+usermod.exports.default.__proto__.getCurrentUser = oldGetUser
+})()
 ```
 
 </details>
