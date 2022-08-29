@@ -121,18 +121,30 @@ Note that this doesn't work with bot tokens. Bot tokens are different than user 
 <summary>Enables some hidden features and sets your client to staff mode</summary>
  
 This will trick your client into thinking that you are a Discord Staff (by modifiying the flags)
-and also enables the secret experiments and Developer Options Menu (where you can get secret unreleased discord updates, 
+and will also enable the secret experiments, Developer Options Menu, and more (where you can get secret unreleased discord updates, 
 emulate a different client, generate build overrides etc.)
-Credit for the Settings hack to https://gist.github.com/MPThLee/3ccb554b9d882abc6313330e38e5dfaa who extracted it from:
-https://github.com/samogot/betterdiscord-plugins (The original creator)
+Credit for the Settings hack to https://canary.discord.com/channels/1000926524452647132/1000955970681319494/1004036518937116752 via the [Replugged](https://github.com/replugged-org) Discord server.
 
 ```js
-window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags += 1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.isDeveloper !== undefined) {Object.defineProperty(m.default, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}); console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou now have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}if (m.isDeveloper !== undefined) {Object.defineProperty(m, "isDeveloper", {get: (a) => 1,set: (a) => a,configurable: true}); console.log("%cWorked!", "font-size: 50px");return console.log(`%cYou now have Developer Options and a Staff badge. You can find the Developer Settings in the Settings's bottom tab!`, "font-size: 16px")}}}]);
+(() => {
+let wpRequire;
+window.webpackChunkdiscord_app.push([[ Math.random() ], {}, (req) => { wpRequire = req; }]);
+mod = Object.values(wpRequire.c).find(x => typeof x?.exports?.default?.isDeveloper !== "undefined")
+usermod = Object.values(wpRequire.c).find(x => x?.exports?.default?.getUsers)
+nodes = Object.values(mod.exports.default._dispatcher._actionHandlers._dependencyGraph.nodes)
+try {
+    nodes.find(x => x.name == "ExperimentStore").actionHandler["OVERLAY_INITIALIZE"]({user: {flags: 1}})
+} catch (e) {}
+oldGetUser = usermod.exports.default.__proto__.getCurrentUser;
+usermod.exports.default.__proto__.getCurrentUser = () => ({hasFlag: () => true})
+nodes.find(x => x.name == "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]()
+usermod.exports.default.__proto__.getCurrentUser = oldGetUser
+})()
 ```
 
 </details>
 
-![discorddevoptions](https://user-images.githubusercontent.com/55095883/116668009-29223780-a99d-11eb-9387-625f10c64196.png)
+![discorddevoptions](https://cdn.discordapp.com/attachments/788198099067076638/1004823296489029702/unknown.png)
 
 <sup>Developer Options Setting</sup>
 <br>
@@ -145,12 +157,18 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 Note that other users won't see the badge, only you can.<br>
 
 ```js
-window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags = -1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags = -1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().public_flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().public_flags += 1}}}]);
+webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.keys(req.c).map((x)=>req.c[x].exports).filter((x)=>x)){if(m.default&&m.default.getCurrentUser!==undefined){return m.default.getCurrentUser().flags=99999999999}}}]);
+```
+to get all badges and place your account under quarantine (visually):
+```js
+webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.keys(req.c).map((x)=>req.c[x].exports).filter((x)=>x)){if(m.default&&m.default.getCurrentUser!==undefined){return m.default.getCurrentUser().flags=-1}}}]);
 ```
 
 </details>
 
 ![preview](https://user-images.githubusercontent.com/55095883/110086787-191e1b00-7d93-11eb-8f0f-2b3a76210155.png)
+
+![preview](https://cdn.discordapp.com/attachments/788198099067076638/1004823731056676954/unknown.png)
 
 <br>
 <sup>This isn't a fake screenshot, your client will really display this.</sup>
