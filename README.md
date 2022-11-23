@@ -81,7 +81,7 @@ It only works on Web and Desktop Versions (Windows, Linux, MacOS), not on Mobile
 
 ## Obtaining your Token
 
-Copies your Token into the clipboard.
+Copies your Token into the clipboard.<br>
 **:warning: DO NOT GIVE THIS TO ANYONE. It grants full access to your account.**
 <details>
 <summary>Expand</summary>
@@ -111,13 +111,13 @@ function login(e) {setInterval(() => {window.webpackChunkdiscord_app.push([[Math
 
 and log in<br>
 Note that this doesn't work with bot tokens. Bot tokens are different than user tokens, and Discord doesn't support this.<br>
-</details>
 
-![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)
-
-<br>
+![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)<br>
 <sup>Login Screen after running the hack</sup>
-<br><br>
+<br>
+
+</details>
+<br>
 
 ## Enable Staff Mode
 
@@ -145,12 +145,10 @@ nodes.find(x => x.name == "DeveloperExperimentStore").actionHandler["CONNECTION_
 usermod.exports.default.__proto__.getCurrentUser = oldGetUser
 })()
 ```
-
-</details>
-
-![discorddevoptions](https://cdn.discordapp.com/attachments/788198099067076638/1004823296489029702/unknown.png)
-
+<br>
+![discorddevoptions](https://cdn.discordapp.com/attachments/788198099067076638/1004823296489029702/unknown.png)<br>
 <sup>Developer Options Setting</sup>
+</details>
 <br>
 
 ## Get all Badges
@@ -257,6 +255,7 @@ Also I don't want Discord to fix this.
 This script was replaced by Discord Oxygen (https://github.com/hxr404/Discord-Oxygen).
 */
 ```
+<br>
 ![grafik](https://user-images.githubusercontent.com/55095883/116668188-5d95f380-a99d-11eb-96cf-a0e2dfc6bb23.png)
 
 <sup>The Subscription Overview. The account used for the screenshot **didn't** buy Nitro</sup>
@@ -277,9 +276,8 @@ var findModule=(item)=>window.webpackChunkdiscord_app.push([[Math.random()],{},(
 findModule('getCurrentUser').getCurrentUser().nsfwAllowed = true
 ```
 <br>
-![grafik](https://raw.githubusercontent.com/PndaBoi/pndaboi/main/6zsLEjYET0.png)
 
-<br>
+![grafik](https://raw.githubusercontent.com/PndaBoi/pndaboi/main/6zsLEjYET0.png)<br>
 <sup>Before Running The Script ^^</sup><bbr>
 <br>
   
@@ -302,6 +300,7 @@ Displays the ID's of channel that you can't see without client modifications.
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getPrivateChannelIds !== undefined) {return console.log(m.default.getPrivateChannelIds())}if (m.getPrivateChannelIds !== undefined) {return console.log(m.getPrivateChannelIds())}}}]);
 ```
 <br>
+
 ![grafik](https://user-images.githubusercontent.com/55095883/116670257-cda57900-a99f-11eb-8f96-7d8d54754535.png)
 
 <br>
@@ -312,7 +311,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 ## Changing Password
 
-Changes the password of the account thats currently logged in.
+Changes the password of the account thats currently logged in.<br>
 Only use this on your own account! Stealing accounts is a crime in most countries.
 <details>
   <summary>Expand</summary>
@@ -347,7 +346,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 ## Delete Webhook
 
-Delete a webhook using it's webhook URL.
+Delete a webhook using it's webhook URL.<br>
 You could use this to delete the webhook of some scammers trying to token-grab you :)
 
 <details>
