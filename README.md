@@ -179,8 +179,6 @@ Note that other users won't see the badges, only you can.<br>
             }
         }
     }]);
-
-
 })();
 ```
 to get all badges and place your account under quarantine (visually):
