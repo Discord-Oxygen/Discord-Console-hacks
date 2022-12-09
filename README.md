@@ -168,7 +168,8 @@ Note that other users won't see the badges, only you can.<br>
         "EARLY_SUPPORTER": 1 << 9,
         "BUG_HUNTER_LEVEL_2": 1 << 14,
         "VERIFIED_BOT_DEVELOPER": 1 << 17,
-        "CERTIFIED_MODERATOR": 1 << 18
+        "CERTIFIED_MODERATOR": 1 << 18,
+        "ACTIVE_DEVELOPER": 1 << 22
     };
     
     webpackChunkdiscord_app.push([[Math.random()], {}, req => {
