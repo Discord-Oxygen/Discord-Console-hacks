@@ -1,6 +1,9 @@
+# Discord Console hacks
+[![License: GPL v3+](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 :warning: **Note:** I'm not affilated with Discord and do not encourage using any of these scripts. Use everything here at your own risk. This is meant for **educational purposes only** and using these codeblocks may result in your account being disabled/terminated.
 
-# Community
+## Community
 
 <details>
   <summary>We're switching to Matrix!</summary>
@@ -21,13 +24,13 @@ Please don't use console hacks not sent by me, or you might risk losing your acc
 I'll update this invite regularly, if e.g. my account gets compromised or Discord shuts down the server, I will create a new account, a new server and then will update the invite above.<br>
 If the invite doesn't work anymore, it means the server got deleted and you need to wait until I can create a new account.
 
-# Inner workings of Discord
+## Inner workings of Discord
 
 **Disclaimer:** The Information provided in this section is obtained through reverse-engineering and NOT verfied for it's accuracy. Therefore it might be outdated aswell.
 <details>
   <summary>Expand</summary>
 
-## Discord Token Syntax
+### Discord Token Syntax
 
 <details>
 <table>
@@ -43,7 +46,7 @@ There is this awesome diagram from <a href="https://github.com/hxr404/Discord-Co
 </details>
 <br>
 
-## Discords Internal Server Structure
+### Discords Internal Server Structure
 
 <details>
 Check out this article about Reverse Engineering Discord, and the proof that Discord decrypts your encrypted data: <a href="https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626">https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626</a><br>
@@ -57,7 +60,7 @@ They can also read your messages (e.g. in DM's), log all edits and deleted messa
 <br>
 </details>
 
-# Console Hacks
+## Console Hacks
 
 As stated in my disclaimer, I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:<br>
 
@@ -74,7 +77,7 @@ It only works on Web and Desktop Versions (Windows, Linux, MacOS), not on Mobile
 3. Paste the script in
 4. Press enter
 
-## Obtaining your Token
+### Obtaining your Token
 
 Copies your Token into the clipboard.<br>
 **:warning: DO NOT GIVE THIS TO ANYONE. It grants full access to your account.**
@@ -91,7 +94,7 @@ The token should be in your clipboard now.
 </details>
 <br>
 
-## Logging in using Token
+### Logging in using Token
 
 Modifies the login screen so you can use tokens to log in.
 
@@ -114,7 +117,7 @@ Note that this doesn't work with bot tokens. Bot tokens are different than user 
 </details>
 <br>
 
-## Enable Staff Mode
+### Enable Staff Mode
 
 Enables some hidden features and sets your client to staff mode
 <details>
@@ -144,7 +147,7 @@ usermod.exports.default.__proto__.getCurrentUser = oldGetUser
 </details>
 <br>
 
-## Get all Badges
+### Get all Badges
 
 This script enables all badges on your client.
 
@@ -193,7 +196,7 @@ webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.k
 </details>
 
 
-## Bot and System Tag
+### Bot and System Tag
 <details>
   <summary>Spoof that you're a bot or the system</summary>
 
@@ -216,7 +219,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 </details>
 <br>
 
-## Easy Edit mode
+### Easy Edit mode
 
 <details>
 <summary>You can use this to make fake screenshots without having to do Inspect Element (CTRL + SHIFT + I) each time</summary>
@@ -228,7 +231,7 @@ document.designMode = 'on'
 </details>
 <br>
 
-## Free Discord Nitro (hack)
+### Free Discord Nitro (hack)
 
 Get some Nitro features without having to buy Nitro.
 This is DISCONTINUED and patched. Superseeded by [Discord Oxygen](https://github.com/hxr404/Discord-Oxygen).
@@ -256,7 +259,7 @@ This script was replaced by Discord Oxygen (https://github.com/hxr404/Discord-Ox
 </details>
 <br>
 
-## View NSFW Channels
+### View NSFW Channels
 
 Displays NSFW channels on an under-18 account.
 **Only use this script if you are 18+! There is a reason those channels were marked as NSFW.**
@@ -284,7 +287,7 @@ findModule('getCurrentUser').getCurrentUser().nsfwAllowed = true
   
 
 
-## Get hidden Channel ID's
+### Get hidden Channel ID's
 
 Displays the ID's of channel that you can't see without client modifications.
 <details>
@@ -303,7 +306,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 </details>
   
 
-## Changing Password
+### Changing Password
 
 Changes the password of the account thats currently logged in.<br>
 Only use this on your own account! Stealing accounts is a crime in most countries.
@@ -319,7 +322,7 @@ Only use this on your own account! Stealing accounts is a crime in most countrie
 
 </details>
   
-  ## Add guild features
+  ### Add guild features
   Enable server features (like having a partnered / verified Server, or some boost-only features).
 <details>
   <summary>Expand</summary>
@@ -338,7 +341,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 </details>
 
-## Delete Webhook
+### Delete Webhook
 
 Delete a webhook using it's webhook URL.<br>
 You could use this to delete the webhook of some scammers trying to token-grab you :)
@@ -355,7 +358,7 @@ You could use this to delete the webhook of some scammers trying to token-grab y
   ```
 </details>
 
-## Phone, Email verification bypAs stated in my disclaimer, I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:ass
+### Phone, Email verification bypAs stated in my disclaimer, I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:ass
 
 Bypass phone and email verification in server, this cannot let you send messages but you can connect and and talk in voice channels.
 <details>
@@ -370,7 +373,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 </details>
 
-## Discord Activities
+### Discord Activities
 
 Add an activity button in voice channel
 <details>
@@ -385,7 +388,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 <img src="https://i.ibb.co/rmskPSH/image.png"></img>
 </details>
 
-## Change Client Color
+### Change Client Color
 
 Changes your client color to your liking.
 
@@ -413,7 +416,7 @@ __SECRET_EMOTION__.injectGlobal(`
 </details>
 
 
-# The Framework
+## The Framework
 
 Now in a seperate repo: https://github.com/hxr404/discord-oxygen
 
@@ -425,17 +428,33 @@ Simply include the source code (.js file) into your Discord client (Desktop or W
 You can either do this by pasting it into your console (CTRL + SHIFT + I, CTRL + V, ENTER)<br>
 Or by adding it as a userscript. (You need a browser extension, for Firefox I recommend Firemonkey)<br>
 
-## How it works
+### How it works
 
 The Framework adds an exstensive API, adding the BetterDiscord (+ Powercord) API is planned, so BD plugins can be loaded through the framework.
 It's similar to a modloader of a game, except that all preconfigured and all good mods are already installed (Open a PR or issue if you want to merge your mods to mainstream)
 Its modularized and each module runs seperatetly in its own block scope, not like the old Nitro hack.
 This should prevent Discord from fixing it, as it no longer depends on hardcoded modifications.
 
-## History
+### History
 
 The free Discord Nitro hack was extremly unstable and Discord fixed it quickly. That's when I started working on the framework. It was the improved Discord Nitro.
 It is much more performant, offering better UX and made development way easier. After successfully merging the old Nitro hack, I continued improving Nitro with more features. And then I thought: why only add default Nitro features? There are so much more awesome features that could be useful as well. Since the framwerork is modularized, it took about 5 minutes merging the other console hacks. And like this a new project was born.
   
   
 </details>
+
+## License
+    Copyright (C) 2022  hxr404
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
