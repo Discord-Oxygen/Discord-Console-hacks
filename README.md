@@ -329,7 +329,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 <br>
 
 
-### Changing Password
+### Change Password
 
 Changes the password of the account that is currently logged in.<br>
 Only use this on your own account! Stealing accounts is a crime in most countries.
@@ -392,7 +392,7 @@ await fetch(webhookURL, {
 <br>
 
 
-### E-mail address & phone number verification bypass.
+### E-mail Address & Phone Number Verification Bypass
 
 Bypasses e-mail address and phone number verification in servers. This does not let you send messages, but you can connect and talk in voice channels.
 
