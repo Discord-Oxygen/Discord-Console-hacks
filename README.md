@@ -476,7 +476,7 @@ This should prevent Discord from fixing it, as it no longer depends on hardcoded
 
 ### History
 
-The free Discord Nitro hack was extremly unstable and Discord fixed it quickly. That's when I started working on The Framework. It was the improved Discord Nitro.
+The free Discord Nitro hack was extremely unstable and Discord fixed it quickly. That's when I started working on The Framework. It was the improved Discord Nitro.
 It is much more performant, offering better UX and made development way easier. After successfully merging the old Nitro hack, I continued improving Nitro with more features. And then I thought: why only add default Nitro features? There are so much more awesome features that could be useful as well. Since The Framwerork is modularized, it took about 5 minutes merging the other console hacks. This is how a new project was born.
 
 </details>
