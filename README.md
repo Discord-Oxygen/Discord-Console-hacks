@@ -83,7 +83,7 @@ It only works on web and desktop versions (Windows, Linux, MacOS), not on mobile
 <br>
 
 
-### Obtaining your Token
+### Obtain your Token
 
 Copies your Token into the clipboard.<br>
 **:warning: DO NOT GIVE THIS TO ANYONE. It grants full access to your account.**
@@ -102,7 +102,7 @@ The token should be in your clipboard now.
 <br>
 
 
-### Logging in using Token
+### Log in using a Token
 
 Modifies the login screen so you can use a token to log in.
 
@@ -424,6 +424,8 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 <img src="https://i.ibb.co/rmskPSH/image.png"></img>
 </details>
+<br>
+
 
 ### Change Client Color
 
