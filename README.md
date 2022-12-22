@@ -6,7 +6,7 @@
 ## Community
 
 <details>
-  <summary>We're switching to Matrix!</summary>
+<summary>We're switching to Matrix!</summary>
   
 Matrix is a community-based, decentralized, privacy friendly, end-to-end encrypted (super secure), uncensorable and open source messaging protocol, which, unlike Discord, promotes custom clients and modifications. There are multiple different clients available, the most popular one (and also the reference implementation) is Element. It runs on most operating systems and also has a pretty good web version. For more information, check out https://matrix.org and https://element.io.<br>
 I often get asked: "*If Matrix is so super awesome, why didn't you start using it earlier?*"<br>
