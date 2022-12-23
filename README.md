@@ -208,7 +208,7 @@ webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.k
 <br>
 
 
-### Bot and System Tag
+### Bot & System Tag
 
 Spoofs that you are a bot or Discord's system. (Only visible to you.)
 
@@ -414,7 +414,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 ### Discord Activities
 
-Adds an activity button in the voice channel you're in.
+Adds the activity button in the voice channel you're in.
 
 <details>
 <summary>Expand</summary>
@@ -451,6 +451,21 @@ __SECRET_EMOTION__.injectGlobal(`
     --channeltextarea-background: #151515;
     }
 `)
+```
+
+</details>
+<br>
+
+
+### AMOLED Theme on Desktop & Web
+
+Activates the AMOLED theme from mobile on desktop and web, which is uses darker colors than the normal theme.
+
+<details>
+<summary>Expand</summary>
+
+```js
+document.body.classList.add("theme-amoled");
 ```
 
 </details>
