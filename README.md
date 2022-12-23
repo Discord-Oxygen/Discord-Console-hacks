@@ -414,7 +414,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 ### Discord Activities
 
-Adds the activity button in the voice channel you're in.
+Adds the Activities button in the voice channel you're in.
 
 <details>
 <summary>Expand</summary>
