@@ -334,7 +334,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 ### Change Password
 
 Changes the password of the account that is currently logged in.<br>
-Only use this on your own account! Stealing accounts is a crime in most countries.
+**Only use this on your own account! Stealing accounts is a crime in most countries.**
 
 <details>
 <summary>Expand</summary>
