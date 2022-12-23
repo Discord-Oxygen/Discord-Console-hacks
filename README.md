@@ -134,7 +134,7 @@ Enables some hidden features and sets your client to staff mode.
 <summary>Expand</summary>
  
 This will trick your client into thinking that you are a staff member of Discord (by modifiying the flags)
-and will also enable the secret experiments, Developer Options menu and more. (In these menus you can get secret unreleased Discord updates, 
+and will also enable the secret experiments, Developer Options menu and more. (In these menus you can get unreleased Discord updates, 
 emulate a different client, generate build overrides and more.)
 
 ```js
@@ -476,7 +476,7 @@ document.body.classList.add("theme-amoled");
 
 ## The Framework
 
-Now in a seperate repository: https://github.com/hxr404/discord-oxygen
+Now in a seperate repository: https://github.com/hxr404/Discord-Oxygen
 
 <details>
 <summary>Expand</summary>
