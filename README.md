@@ -133,9 +133,7 @@ Enables some hidden features and sets your client to staff mode.
 <details>
 <summary>Expand</summary>
  
-This will trick your client into thinking that you are a staff member of Discord (by modifiying the flags)
-and will also enable the secret experiments, Developer Options menu and more. (In these menus you can get unreleased Discord updates, 
-emulate a different client, generate build overrides and more.)
+This will trick your client into thinking that you are a staff member of Discord (by modifiying certain flags) and will also allow you to access experiments, developer options and more. (In these menus you can get unreleased Discord updates, emulate a different client, generate build overrides and more.)
 
 ```js
 let wpRequire;
