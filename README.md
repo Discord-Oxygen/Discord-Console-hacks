@@ -31,9 +31,13 @@ If the invite doesn't work anymore, it means the server got deleted and you need
 <details>
 <summary>Expand</summary>
 
+<br>
+
 ### Discord Token Syntax
 
 <details>
+<summary>Expand</summary>
+
 <table>
   <tr><th></th><th>Example</th></tr>
   <tr><td>User ID Encoded in Base64</td><td>NTzQvPcLBacBmgajXQc7QAaU</td></tr>
@@ -47,9 +51,12 @@ There is this awesome diagram from <a href="https://github.com/hxr404/Discord-Co
 </details>
 <br>
 
+
 ### Discord's Internal Server Structure
 
 <details>
+<summary>Expand</summary>
+
 Check out this article about reverse engineering Discord, and the proof that Discord decrypts your encrypted data: <a href="https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626">https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626</a><br>
 They can also read your messages (e.g. in DM's), log all edits and deleted messages and record your voice calls.
 
