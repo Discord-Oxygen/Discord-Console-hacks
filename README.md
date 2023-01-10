@@ -6,7 +6,7 @@
 ## Community
 
 <details>
-<summary>We're switching to Matrix!</summary>
+<summary>Join us on Matrix!</summary>
   
 Matrix is a community-based, decentralized, privacy friendly, end-to-end encrypted (super secure), uncensorable and open source messaging protocol, which, unlike Discord, promotes custom clients and modifications. There are multiple different clients available, the most popular one (and also the reference implementation) is Element. It runs on most operating systems and also has a pretty good web version. For more information, check out https://matrix.org and https://element.io.<br>
 I often get asked: "*If Matrix is so super awesome, why didn't you start using it earlier?*"<br>
@@ -26,14 +26,18 @@ If the invite doesn't work anymore, it means the server got deleted and you need
 
 ## Inner workings of Discord
 
-**Disclaimer:** The information provided in this section is obtained through reverse-engineering and NOT verified for it's accuracy. Therefore it might be outdated as well.
+**Disclaimer:** The information provided in this section is obtained through reverse engineering and NOT verified for it's accuracy. Therefore it might be outdated as well.
 
 <details>
 <summary>Expand</summary>
 
+<br>
+
 ### Discord Token Syntax
 
 <details>
+<summary>Expand</summary>
+
 <table>
   <tr><th></th><th>Example</th></tr>
   <tr><td>User ID Encoded in Base64</td><td>NTzQvPcLBacBmgajXQc7QAaU</td></tr>
@@ -47,9 +51,12 @@ There is this awesome diagram from <a href="https://github.com/hxr404/Discord-Co
 </details>
 <br>
 
+
 ### Discord's Internal Server Structure
 
 <details>
+<summary>Expand</summary>
+
 Check out this article about reverse engineering Discord, and the proof that Discord decrypts your encrypted data: <a href="https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626">https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626</a><br>
 They can also read your messages (e.g. in DM's), log all edits and deleted messages and record your voice calls.
 
@@ -97,7 +104,9 @@ Paste this into the console (while being logged in):
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getToken !== undefined) {return copy(m.default.getToken())}if (m.getToken !== undefined) {return copy(m.getToken())}}}]); console.log("%cIt worked!", "font-size: 50px"); console.log(`%cYou now have your token in the clipboard!`, "font-size: 16px")
 ```
 
-The token should be in your clipboard now.
+The token should be in your clipboard now.<br>
+You can paste the token by pressing CTRL + V, but please be careful using it.<br>
+See your token as an envelope containing your address, your house key and your passport / identity card. If you give the envelope away to someone, they will have full access to everything inside your house (and can even burn it down) and your identity (and act like they're you). Within Discord, they can mess your whole account up, buy Nitro with your money (if a payment method like PayPal or a credit card is used), impersonate you, mess with your servers (and even delete them if 2FA is not enabled on your account) and more.
 </details>
 <br>
 
@@ -131,9 +140,7 @@ Enables some hidden features and sets your client to staff mode.
 <details>
 <summary>Expand</summary>
  
-This will trick your client into thinking that you are a staff member of Discord (by modifiying the flags)
-and will also enable the secret experiments, Developer Options menu and more. (In these menus you can get secret unreleased Discord updates, 
-emulate a different client, generate build overrides and more.)
+This will trick your client into thinking that you are a staff member of Discord (by modifiying certain flags) and will also allow you to access experiments, developer options and more. (In these menus you can get unreleased Discord updates, emulate a different client, generate build overrides and more.)
 
 ```js
 let wpRequire;
@@ -206,7 +213,7 @@ webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.k
 <br>
 
 
-### Bot and System Tag
+### Bot & System Tag
 
 Spoofs that you are a bot or Discord's system. (Only visible to you.)
 
@@ -332,7 +339,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 ### Change Password
 
 Changes the password of the account that is currently logged in.<br>
-Only use this on your own account! Stealing accounts is a crime in most countries.
+**Only use this on your own account! Stealing accounts is a crime in most countries.**
 
 <details>
 <summary>Expand</summary>
@@ -412,7 +419,7 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 
 ### Discord Activities
 
-Adds an activity button in the voice channel you're in.
+Adds the Activities button in the voice channel you're in.
 
 <details>
 <summary>Expand</summary>
@@ -452,6 +459,21 @@ __SECRET_EMOTION__.injectGlobal(`
 ```
 
 </details>
+<br>
+
+
+### AMOLED Theme on Desktop & Web
+
+Activates the AMOLED theme from mobile on desktop and web, which is uses darker colors than the normal theme.
+
+<details>
+<summary>Expand</summary>
+
+```js
+document.body.classList.add("theme-amoled");
+```
+
+</details>
 
 </details>
 <br>
@@ -459,7 +481,7 @@ __SECRET_EMOTION__.injectGlobal(`
 
 ## The Framework
 
-Now in a seperate repository: https://github.com/hxr404/discord-oxygen
+Now in a seperate repository: https://github.com/hxr404/Discord-Oxygen
 
 <details>
 <summary>Expand</summary>
