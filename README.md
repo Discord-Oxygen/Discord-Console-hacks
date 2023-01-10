@@ -105,8 +105,9 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 ```
 
 The token should be in your clipboard now.<br>
-You can paste the token by pressing CTRL + V, but please be careful using it.<br>
-See your token as an envelope containing your address, your house key and your passport / identity card. If you give the envelope away to someone, they will have full access to everything inside your house (and can even burn it down) and your identity (and act like they're you). Within Discord, they can mess your whole account up, buy Nitro with your money (if a payment method like PayPal or a credit card is used), impersonate you, mess with your servers (and even delete them if 2FA is not enabled on your account) and more.
+Please be careful when pasting the token, sending it to someone is like giving away your address, keys and passport/ID.<br>
+Someone who knows your token can impersonate you, mess with your friends and servers, spend your money (if you added a payment method for nitro), and even figure out your IP-Adress (aka. probably your real-life home adress) using the new devices feature.
+
 </details>
 <br>
 
