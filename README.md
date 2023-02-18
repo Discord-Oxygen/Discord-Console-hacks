@@ -482,7 +482,7 @@ document.body.classList.add("theme-amoled");
 
 ## The Framework
 
-Now in a seperate repository: https://github.com/hxr404/Discord-Oxygen
+Now in a seperate repository: https://github.com/Discord-Oxygen/Discord-Oxygen
 
 <details>
 <summary>Expand</summary>
