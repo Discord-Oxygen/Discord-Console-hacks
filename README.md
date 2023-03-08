@@ -263,17 +263,16 @@ document.designMode = 'on'
 <br>
 
 
-### Spotify "Listen With" spoof
+### Spotify "Listen Along" Spoofer
 
-Makes it possible to use the "Listen With" feature without needing Spotify Premium
+Makes it possible to use the "Listen Along" feature without needing Spotify Premium.
 
 <details>
 <summary>Expand</summary>
 
 ```js
-WIP - Going to add soon.
+WIP.
 ```
-
 </details>
 <br>
 
