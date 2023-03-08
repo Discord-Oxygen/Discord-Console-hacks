@@ -141,7 +141,7 @@ Enables some hidden features and sets your client to staff mode.
 <details>
 <summary>Expand</summary>
  
-This will trick your client into thinking that you are a staff member of Discord (by modifiying certain flags) and will also allow you to access experiments, developer options and more. (In these menus you can get unreleased Discord updates, emulate a different client, generate build overrides and more.)
+This will trick your client into thinking that you are a staff member of Discord (by modifiying certain flags) and will also allow you to access the experiments tab, developer options, and more. (In these menus you can get unreleased Discord updates, emulate a different client, generate build overrides and more.)
 
 ```js
 let wpRequire;
@@ -216,7 +216,7 @@ webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.k
 
 ### Bot & System Tag
 
-Spoofs that you are a bot or Discord's system. (Only visible to you.)
+Spoofs your Discord suffix to show that your Discord's `SYSTEM` tag or `BOT` tag. (Only visible to you.)
 
 <details>
 <summary>Expand</summary>
@@ -257,6 +257,21 @@ You can use this to make fake screenshots without having to use Inspect Element 
 
 ```js
 document.designMode = 'on'
+```
+
+</details>
+<br>
+
+
+### Spotify "Listen With" spoof
+
+Makes it possible to use the "Listen With" feature without needing Spotify Premium
+
+<details>
+<summary>Expand</summary>
+
+```js
+WIP - Going to add soon.
 ```
 
 </details>
