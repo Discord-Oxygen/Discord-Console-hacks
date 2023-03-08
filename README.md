@@ -144,18 +144,17 @@ Enables some hidden features and sets your client to staff mode.
 This will trick your client into thinking that you are a staff member of Discord (by modifiying certain flags) and will also allow you to access experiments, developer options and more. (In these menus you can get unreleased Discord updates, emulate a different client, generate build overrides and more.)
 
 ```js
-let wpRequire;
-window.webpackChunkdiscord_app.push([[ Math.random() ], {}, (req) => { wpRequire = req; }]);
-mod = Object.values(wpRequire.c).find(x => typeof x?.exports?.Z?.isDeveloper !== "undefined");
-usermod = Object.values(wpRequire.c).find(x => x?.exports?.default?.getUsers)
-nodes = Object.values(mod.exports.Z._dispatcher._actionHandlers._dependencyGraph.nodes)
-try {
-    nodes.find(x => x.name == "ExperimentStore").actionHandler["OVERLAY_INITIALIZE"]({user: {flags: 1}})
-} catch (e) {}
-oldGetUser = usermod.exports.default.__proto__.getCurrentUser;
-usermod.exports.default.__proto__.getCurrentUser = () => ({isStaff: () => true})
-nodes.find(x => x.name == "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]()
-usermod.exports.default.__proto__.getCurrentUser = oldGetUser
+window.webpackChunkdiscord_app.push([[ Math.random() ], {}, req => {
+    user = Object.values(req.c).find(x => x?.exports?.default?.getUsers).exports.default;
+    if (!user) return console.error('ERROR : USER UNDEFINED');
+    dataUser = user.__proto__.getCurrentUser;
+    user.__proto__.getCurrentUser = () => ({isStaff: () => true})
+    try {
+        Object.values(Object.values(req.c).find(x => typeof x?.exports?.Z?.isDeveloper !== 'undefined').exports.Z._dispatcher._actionHandlers._dependencyGraph.nodes).find(x => x.name == "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]()
+        user.__proto__.getCurrentUser = dataUser;
+        console.info('You are now access to the developer category !');
+    } catch (e) { console.error(`ERROR : ${e}`); };
+}]);
 ```
 <br>
 
