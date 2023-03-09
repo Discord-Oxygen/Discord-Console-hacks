@@ -3,6 +3,9 @@
 
 :warning: **Note:** I'm not affiliated with Discord and do not encourage using any of these scripts. Use everything here at your own risk. This is meant for **educational purposes only** and using these codeblocks may result in your account being disabled/terminated.
 
+***
+
+
 ## Community
 
 <details>
@@ -24,6 +27,8 @@ Please don't use console hacks not sent by me, or you might risk losing your acc
 I'll update this invite regularly, if for example my account gets compromised or Discord shuts down the server. If something like that occurs, I will create a new account, a new server and then update the invite above.<br>
 If the invite doesn't work anymore, it means the server got deleted and you need to wait until I can create a new account.
 
+***
+
 ## Inner workings of Discord
 
 **Disclaimer:** The information provided in this section is obtained through reverse engineering and NOT verified for it's accuracy. Therefore it might be outdated as well.
@@ -32,6 +37,9 @@ If the invite doesn't work anymore, it means the server got deleted and you need
 <summary>Expand</summary>
 
 <br>
+
+***
+
 
 ### Discord Token Syntax
 
@@ -101,7 +109,7 @@ Copies your Token into the clipboard.<br>
 Paste this into the console (while being logged in):
 
 ```js
-window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getToken !== undefined) {return copy(m.default.getToken())}if (m.getToken !== undefined) {return copy(m.getToken())}}}]); console.log("%cIt worked!", "font-size: 50px"); console.log(`%cYou now have your token in the clipboard!`, "font-size: 16px")
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getToken !== undefined) {return copy(m.default.getToken())}if (m.getToken !== undefined) {return copy(m.getToken())}}}]); console.log("%cDone!", "font-size: 50px"); console.log(`%cYou now have your token in the clipboard!`, "font-size: 16px")
 ```
 
 The token should be in your clipboard now.<br>
@@ -129,7 +137,7 @@ You can now log in using a token.<br>
 Note that this doesn't work with bot tokens. Bot tokens are different from user tokens, and Discord doesn't support this.<br>
 
 ![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)<br>
-<sup>Login Screen after running the hack</sup>
+<sup>Login Screen after running the script:</sup>
 </details>
 <br>
 
@@ -141,7 +149,7 @@ Enables some hidden features and sets your client to staff mode.
 <details>
 <summary>Expand</summary>
  
-This will trick your client into thinking that you are a staff member of Discord (by modifiying certain flags) and will also allow you to access experiments, developer options and more. (In these menus you can get unreleased Discord updates, emulate a different client, generate build overrides and more.)
+This will trick your client into thinking that you are a staff member of Discord (by modifiying certain flags) and will also allow you to access the experiments tab, developer options, and more. (In these menus you can get unreleased Discord updates, emulate a different client, generate build overrides and more.)
 
 ```js
 let wpRequire;
@@ -216,7 +224,7 @@ webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.k
 
 ### Bot & System Tag
 
-Spoofs that you are a bot or Discord's system. (Only visible to you.)
+Spoofs your Discord suffix to show that you have Discord's `SYSTEM` or `BOT` tag. (Only visible to you.)
 
 <details>
 <summary>Expand</summary>
@@ -225,11 +233,13 @@ Bot tag code:
 ```js
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().bot = true;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().bot = true}}}])
 ```
+  
 Verified Bot tag code:
 ```js
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().bot = true;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().bot = true}}}])
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().isVerifiedBot = () => true;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().isVerifiedBot = () => true}}}])
 ```
+  
 System tag code:
 ```js
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().isSystemUser = () => true;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().isSystemUser = () => true}}}])
@@ -259,6 +269,20 @@ You can use this to make fake screenshots without having to use Inspect Element 
 document.designMode = 'on'
 ```
 
+</details>
+<br>
+
+
+### Spotify "Listen Along" Spoofer
+
+Makes it possible to use the "Listen Along" feature without needing Spotify Premium.
+
+<details>
+<summary>Expand</summary>
+
+```js
+(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m => m?.exports?.Z?.getAccounts).exports.Z.getAccounts().forEach((conn) => conn.type === "spotify" && (webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m => m?.exports?.Z?.isDispatching).exports.Z.dispatch({type: "SPOTIFY_PROFILE_UPDATE", accountId: conn.id, isPremium: true}))
+```
 </details>
 <br>
 
@@ -301,7 +325,7 @@ Grants access to channels marked as NSFW on an under-18 account.<br>
 <details>
 <summary>Expand</summary>
 
-  This script is intended for people (>18) whose accounts have been wrongfully marked as underage and who don't want to dox their personal data / ID on the internet. Don't use it for other purposes.
+This script is intended for people (>18) whose accounts have been wrongfully marked as underage. Don't use it for other purposes.
 
 ```js
 var findModule=(item)=>window.webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.keys(req.c).map((x)=>req.c[x].exports).filter((x)=>x)){if(m.default&&m.default[item]!==undefined)return m.default}}])
@@ -319,7 +343,7 @@ findModule('getCurrentUser').getCurrentUser().nsfwAllowed = true
 <br>
 
 
-### Get Hidden Channel ID's
+### Get Hidden Channel IDs
 
 Displays the ID's of channels that you can't see without client modifications.
 
@@ -465,7 +489,7 @@ __SECRET_EMOTION__.injectGlobal(`
 
 ### AMOLED Theme on Desktop & Web
 
-Activates the AMOLED theme from mobile on desktop and web, which is uses darker colors than the normal theme.
+Activates the AMOLED theme from mobile on desktop and web, which uses darker colors than the normal theme and is better on the eyes.
 
 <details>
 <summary>Expand</summary>
@@ -479,6 +503,7 @@ document.body.classList.add("theme-amoled");
 </details>
 <br>
 
+***
 
 ## The Framework
 
@@ -499,12 +524,17 @@ It's similar to a mod loader of a game, except that all good mods are already in
 The Framework is modularized and each module runs seperately in its own block scope, not like the old Nitro hack.
 This should prevent Discord from fixing it, as it no longer depends on hardcoded modifications.
 
+***
+
+
 ### History
 
 The free Discord Nitro hack was extremely unstable and Discord fixed it quickly. That's when I started working on The Framework. It was the improved Discord Nitro.
 It is much more performant, offering better UX and made development way easier. After successfully merging the old Nitro hack, I continued improving Nitro with more features. And then I thought: why only add default Nitro features? There are so much more awesome features that could be useful as well. Since The Framwerork is modularized, it took about 5 minutes merging the other console hacks. This is how a new project was born.
 
 </details>
+
+***
 
 ## License
     Copyright (C) 2022  hxr404
