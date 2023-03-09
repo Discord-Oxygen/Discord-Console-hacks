@@ -3,6 +3,9 @@
 
 :warning: **Note:** I'm not affiliated with Discord and do not encourage using any of these scripts. Use everything here at your own risk. This is meant for **educational purposes only** and using these codeblocks may result in your account being disabled/terminated.
 
+***
+
+
 ## Community
 
 <details>
@@ -24,6 +27,8 @@ Please don't use console hacks not sent by me, or you might risk losing your acc
 I'll update this invite regularly, if for example my account gets compromised or Discord shuts down the server. If something like that occurs, I will create a new account, a new server and then update the invite above.<br>
 If the invite doesn't work anymore, it means the server got deleted and you need to wait until I can create a new account.
 
+***
+
 ## Inner workings of Discord
 
 **Disclaimer:** The information provided in this section is obtained through reverse engineering and NOT verified for it's accuracy. Therefore it might be outdated as well.
@@ -32,6 +37,9 @@ If the invite doesn't work anymore, it means the server got deleted and you need
 <summary>Expand</summary>
 
 <br>
+
+***
+
 
 ### Discord Token Syntax
 
@@ -495,6 +503,7 @@ document.body.classList.add("theme-amoled");
 </details>
 <br>
 
+***
 
 ## The Framework
 
@@ -515,12 +524,17 @@ It's similar to a mod loader of a game, except that all good mods are already in
 The Framework is modularized and each module runs seperately in its own block scope, not like the old Nitro hack.
 This should prevent Discord from fixing it, as it no longer depends on hardcoded modifications.
 
+***
+
+
 ### History
 
 The free Discord Nitro hack was extremely unstable and Discord fixed it quickly. That's when I started working on The Framework. It was the improved Discord Nitro.
 It is much more performant, offering better UX and made development way easier. After successfully merging the old Nitro hack, I continued improving Nitro with more features. And then I thought: why only add default Nitro features? There are so much more awesome features that could be useful as well. Since The Framwerork is modularized, it took about 5 minutes merging the other console hacks. This is how a new project was born.
 
 </details>
+
+***
 
 ## License
     Copyright (C) 2022  hxr404
