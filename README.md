@@ -101,7 +101,7 @@ Copies your Token into the clipboard.<br>
 Paste this into the console (while being logged in):
 
 ```js
-window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getToken !== undefined) {return copy(m.default.getToken())}if (m.getToken !== undefined) {return copy(m.getToken())}}}]); console.log("%cIt worked!", "font-size: 50px"); console.log(`%cYou now have your token in the clipboard!`, "font-size: 16px")
+window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getToken !== undefined) {return copy(m.default.getToken())}if (m.getToken !== undefined) {return copy(m.getToken())}}}]); console.log("%cDone!", "font-size: 50px"); console.log(`%cYou now have your token in the clipboard!`, "font-size: 16px")
 ```
 
 The token should be in your clipboard now.<br>
@@ -129,7 +129,7 @@ You can now log in using a token.<br>
 Note that this doesn't work with bot tokens. Bot tokens are different from user tokens, and Discord doesn't support this.<br>
 
 ![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)<br>
-<sup>Login Screen after running the hack</sup>
+<sup>Login Screen after running the script:</sup>
 </details>
 <br>
 
@@ -216,7 +216,7 @@ webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.k
 
 ### Bot & System Tag
 
-Spoofs your Discord suffix to show that your Discord's `SYSTEM` tag or `BOT` tag. (Only visible to you.)
+Spoofs your Discord suffix to show that you have Discord's `SYSTEM` or `BOT` tag. (Only visible to you.)
 
 <details>
 <summary>Expand</summary>
@@ -225,11 +225,13 @@ Bot tag code:
 ```js
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().bot = true;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().bot = true}}}])
 ```
+  
 Verified Bot tag code:
 ```js
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().bot = true;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().bot = true}}}])
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().isVerifiedBot = () => true;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().isVerifiedBot = () => true}}}])
 ```
+  
 System tag code:
 ```js
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().isSystemUser = () => true;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().isSystemUser = () => true}}}])
@@ -315,7 +317,7 @@ Grants access to channels marked as NSFW on an under-18 account.<br>
 <details>
 <summary>Expand</summary>
 
-  This script is intended for people (>18) whose accounts have been wrongfully marked as underage and who don't want to dox their personal data / ID on the internet. Don't use it for other purposes.
+This script is intended for people (>18) whose accounts have been wrongfully marked as underage. Don't use it for other purposes.
 
 ```js
 var findModule=(item)=>window.webpackChunkdiscord_app.push([[Math.random()],{},(req)=>{for(const m of Object.keys(req.c).map((x)=>req.c[x].exports).filter((x)=>x)){if(m.default&&m.default[item]!==undefined)return m.default}}])
@@ -333,7 +335,7 @@ findModule('getCurrentUser').getCurrentUser().nsfwAllowed = true
 <br>
 
 
-### Get Hidden Channel ID's
+### Get Hidden Channel IDs
 
 Displays the ID's of channels that you can't see without client modifications.
 
@@ -479,7 +481,7 @@ __SECRET_EMOTION__.injectGlobal(`
 
 ### AMOLED Theme on Desktop & Web
 
-Activates the AMOLED theme from mobile on desktop and web, which is uses darker colors than the normal theme.
+Activates the AMOLED theme from mobile on desktop and web, which uses darker colors than the normal theme and is better on the eyes.
 
 <details>
 <summary>Expand</summary>
