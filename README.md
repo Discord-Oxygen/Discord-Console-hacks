@@ -130,7 +130,55 @@ Modifies the login screen so you can use a token to log in.
 Paste this into the console (CTRL + SHIFT + I) on the login screen (you need to be logged out):
 
 ```js
-function login(e) {setInterval(() => {window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.setToken !== undefined) {return m.default.setToken(e)}if (m.setToken !== undefined) {return m.setToken(e)}}}]);console.log("%cWorked!", "font-size: 50px");}, 50), setTimeout(() => {window.location.reload()}, 2500)}function buttonlogin(){login(document.getElementsByClassName("inputDefault-3FGxgL input-2g-os5")[0].value)}var element;(element=document.getElementsByClassName("marginBottom8-emkd0_ button-1cRKG6 button-f2h6uQ lookFilled-yCfaCM colorBrand-I6CyqQ sizeLarge-3mScP9 fullWidth-fJIsjq grow-2sR_-F")[0]).addEventListener("click",buttonlogin),(element=document.getElementsByClassName("marginBottom20-315RVT")[0]).parentElement.removeChild(element),(element=document.getElementsByClassName("colorStandard-21JIj7 size14-3fJ-ot h5-2RwDNl title-3hptVQ defaultMarginh5-3Jxf6f")[0]).innerHTML="Token",element.id="Token",(element=document.getElementsByClassName("transitionGroup-bPT0qU qrLogin-1ejtpI")[0]).parentElement.removeChild(element),(element=document.getElementsByClassName("verticalSeparator-2r9gHa")[0]).parentElement.removeChild(element);
+function deleteElementsAndChangeInnerText() {
+  const selectorsToDelete = [
+    '.transitionGroup-14WiKS.qrLogin-1ejtpI',
+    '.verticalSeparator-2r9gHa',
+    '.block-3uVSn4 > div:nth-child(2)',
+    '.marginBottom20-315RVT.marginTop4-2JFJJI.linkButton-2ax8wP.button-ejjZWC.lookLink-13iF2K.lowSaturationUnderline-Z6CW6z.colorLink-34zig_.sizeMin-3Yqxk5.grow-2T4nbg'
+  ];
+
+  const elementsToChangeInnerText = document.querySelectorAll('.label-7akf7-.eyebrow-2wJAoF.defaultColor-3Olr-9.defaultMarginlabel-26Urq5');
+  elementsToChangeInnerText.forEach((element) => {
+    element.innerText = 'INSERT YOUR TOKEN';
+  });
+
+  selectorsToDelete.forEach((selector) => {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach((element) => {
+      element.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+      element.remove();
+    });
+  });
+
+  const inputField = document.querySelector('.inputDefault-Ciwd-S.input-3O04eu.inputField-2RZxdl');
+  inputField.type = "password";
+}
+
+function login(token) {
+  setInterval(() => {
+    document.body.appendChild(document.createElement('iframe')).contentWindow.localStorage.token = `"${token}"`;
+  }, 50);
+  setTimeout(() => {
+    location.reload();
+  }, 100);
+}
+
+function addLoginClickEventListener() {
+  const loginButton = document.querySelector('.marginBottom8-emkd0_.button-1cRKG6.button-ejjZWC.lookFilled-1H2Jvj.colorBrand-2M3O3N.sizeLarge-2xP3-w.fullWidth-3M-YBR.grow-2T4nbg');
+  const inputField = document.querySelector('.inputDefault-Ciwd-S.input-3O04eu.inputField-2RZxdl');
+  
+  loginButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    login(inputField.value);
+  });
+}
+
+deleteElementsAndChangeInnerText();
+addLoginClickEventListener();
 ```
 
 You can now log in using a token.<br>
