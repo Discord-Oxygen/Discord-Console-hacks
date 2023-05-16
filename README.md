@@ -184,7 +184,7 @@ addLoginClickEventListener();
 You can now log in using a token.<br>
 Note that this doesn't work with bot tokens. Bot tokens are different from user tokens, and Discord doesn't support this.<br>
 
-![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)<br>
+![exampleimage]([https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png](https://cdn.discordapp.com/attachments/1105146331393175642/1108051810368884806/image.png))<br>
 <sup>Login Screen after running the script:</sup>
 </details>
 <br>
