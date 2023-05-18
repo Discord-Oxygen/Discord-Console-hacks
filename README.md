@@ -120,6 +120,7 @@ Someone who knows your token can impersonate you, mess with your friends and ser
 <br>
 
 
+
 ### Log in using a Token
 
 Modifies the login screen so you can use a token to log in.
@@ -271,6 +272,34 @@ document.designMode = 'on'
 
 </details>
 <br>
+
+
+### Colorful Banner (Non nitro)
+
+Changes the boring old colored banner to a colorful changing banner. Fully customizable<br>
+**:warning: Make sure to open your profile for this to work..**
+
+<details>
+<summary>Expand</summary>
+
+```js
+// Define colors and index
+let colors = ['rgb(255, 0, 0)', 'rgb(0, 255, 0)', 'rgb(0, 0, 255)'];
+let i = 0;
+
+// Use the querySelector to find the div element
+let divElement = document.querySelector('.banner-1YaD3N');
+
+// Change the background-color attribute to your new color every second
+setInterval(() => {
+  divElement.style.backgroundColor = colors[i];
+  i = (i + 1) % colors.length; // Cycle through the colors
+}, 1000);
+```
+
+</details>
+<br>
+
 
 
 ### Spotify "Listen Along" Spoofer
